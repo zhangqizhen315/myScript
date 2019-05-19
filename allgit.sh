@@ -3,7 +3,7 @@
 obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src" "/home/zhang/vimplus")
 sina=("/var/www/html/document" "/var/www/html/zhangqizhen")
 
-cp -f /home/zhang/.zshrc /home/zhang/myscript
+cp -f /home/zhang/.zshrc /home/zhang/myScript
 
 for i in ${obj[@]}
 do
