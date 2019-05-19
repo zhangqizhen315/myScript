@@ -47,5 +47,5 @@ do
     echo "======================"
 done
 
-cp -f /home/zhang/myScript /home/zhang/
-.source
+cp -f /home/zhang/myScript/.zshrc /home/zhang/
+source /home/zhang/.zshrc
