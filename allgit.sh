@@ -9,6 +9,9 @@ do
     echo "======================"
     echo "现在开始对${i}提交 git 了"
     cd ${i}
+    cd .git 
+    sudo chown -R zhang:zhang *
+    cd ..
     git add .
     git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
     git checkout master
@@ -28,6 +31,9 @@ do
     echo "======================"
     echo "现在开始对${i}提交 git 了"
     cd ${i}
+    cd .git 
+    sudo chown -R zhang:zhang *
+    cd ..
     sudo git add .
     sudo git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
     sudo git checkout master
