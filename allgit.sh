@@ -9,13 +9,13 @@ do
     echo "======================"
     echo "现在开始对${i}提交 git 了"
     cd ${i}
-    sudo git add .
-    sudo git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
-    sudo git checkout master
-    sudo git pull origin master:master
-    sudo git merge dev
-    sudo git push
-    sudo git checkout dev
+    git add .
+    git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
+    git checkout master
+    git pull origin master:master
+    git merge dev
+    git push
+    git checkout dev
     sudo chown -R zhang:zhang *
     echo "======================"
 done
