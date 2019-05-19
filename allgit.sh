@@ -14,10 +14,10 @@ do
     sudo git add .
     sudo git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
     sudo git pull origin master:master
-    sudo git branch master
+    sudo git checkout master
     sudo git merge dev
     sudo push push origin master
-    sudo git branch dev
+    sudo git checkout dev
     echo "======================"
     echo "======================"
 done
