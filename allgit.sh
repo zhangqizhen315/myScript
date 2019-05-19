@@ -16,6 +16,8 @@ do
     sudo git pull origin master:master
     sudo git branch master
     sudo git merge dev
-    sudo push origin master
+    sudo push push origin master
     sudo git branch dev
+    echo "======================"
+    echo "======================"
 done
