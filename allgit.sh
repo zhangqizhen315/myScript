@@ -1,7 +1,9 @@
 #!/bin/bash
 
-obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src")
+obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src" "/home/zhang/vimplus")
 sina=("/var/www/html/document" "/var/www/html/zhangqizhen")
+
+cp -f /home/zhang/.zshrc /home/zhang/myscript
 
 for i in ${obj[@]}
 do
@@ -44,3 +46,6 @@ do
     sudo chown -R zhang:zhang *
     echo "======================"
 done
+
+cp -f /home/zhang/myScript /home/zhang/
+.source
