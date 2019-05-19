@@ -37,7 +37,7 @@ do
     sudo git add .
     sudo git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
     sudo git checkout master
-    sudo git pull origin master:master
+    sudo git pull origin 1:master
     sudo git merge dev
     sudo git push origin master:1
     sudo git checkout dev
