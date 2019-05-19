@@ -16,8 +16,9 @@ do
     sudo git pull origin master:master
     sudo git checkout master
     sudo git merge dev
-    sudo push push origin master
+    sudo git push origin master
     sudo git checkout dev
+    sudo chown -R zhang:zhang *
     echo "======================"
     echo "======================"
 done
