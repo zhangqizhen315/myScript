@@ -21,6 +21,7 @@ do
     git merge dev
     git push
     git checkout dev
+    git merge master
     sudo chown -R zhang:zhang *
     echo "======================"
 done
@@ -36,14 +37,15 @@ do
     cd .git 
     sudo chown -R zhang:zhang *
     cd ..
-    sudo git add .
-    sudo git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
-    sudo git checkout master
-    sudo git pull origin 1:master
-    sudo git merge dev
-    sudo git push origin master:1
-    sudo git checkout dev
-    sudo chown -R zhang:zhang *
+    git add .
+    git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
+    git checkout master
+    git pull origin 1:master
+    git merge dev
+    git push origin master:1
+    git checkout dev
+    git checkout master
+    chown -R zhang:zhang *
     echo "======================"
 done
 
