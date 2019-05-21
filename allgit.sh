@@ -21,7 +21,6 @@ do
     git merge dev
     git push
     git checkout dev
-    git merge master
     sudo chown -R zhang:zhang *
     echo "======================"
 done
@@ -44,8 +43,7 @@ do
     git merge dev
     git push origin master:1
     git checkout dev
-    git checkout master
-    chown -R zhang:zhang *
+    sudo chown -R zhang:zhang *
     echo "======================"
 done
 
