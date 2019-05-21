@@ -18,6 +18,7 @@ do
     git merge dev
     git push
     git checkout dev
+    git merge dev
     sudo chown -R zhang:zhang *
     echo "======================"
 done
