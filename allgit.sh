@@ -1,9 +1,6 @@
 #!/bin/bash
 
-obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src" "/home/zhang/vimplus")
-sina=("/var/www/html/document" "/var/www/html/zhangqizhen")
-
-cp -f /home/zhang/.zshrc /home/zhang/myScript
+obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src" "/var/www/html/learnhtml" "/var/www/html/document" "/var/www/html/zhangqizhen" "/var/www/html/old")
 
 for i in ${obj[@]}
 do
@@ -24,28 +21,3 @@ do
     sudo chown -R zhang:zhang *
     echo "======================"
 done
-
-
-
-for i in ${sina[@]}
-do
-# 进入目标文件夹;
-    echo "======================"
-    echo "现在开始对${i}提交 git 了"
-    cd ${i}
-    cd .git 
-    sudo chown -R zhang:zhang *
-    cd ..
-    sudo git add .
-    sudo git commit -m "`date '+%Y-%m-%d:%H:%M:S'`"
-    sudo git checkout master
-    sudo git pull origin 1:master
-    sudo git merge dev
-    sudo git push origin master:1
-    sudo git checkout dev
-    sudo chown -R zhang:zhang *
-    echo "======================"
-done
-
-cp -f /home/zhang/myScript/.zshrc /home/zhang/
-source /home/zhang/.zshrc
