@@ -1,6 +1,6 @@
 #!/bin/bash
 
-obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src" "/var/www/html/learnhtml" "/var/www/html/document" "/var/www/html/zhangqizhen" "/var/www/html/old")
+obj=("/home/zhang/myScript" "/var/www/html/diary" "/var/www/html/note" "/var/www/html/src" "/var/www/html/learnhtml" "/var/www/html/document" "/var/www/html/zhangqizhen" "/var/www/html/old" "/home/zhang/template")
 
 for i in ${obj[@]}
 do
