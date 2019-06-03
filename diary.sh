@@ -4,7 +4,7 @@
 # 设置变量
 m=$(date +"%Y-%m")
 d=$(date +"%d")
-diaryDir="/var/www/html/diary"
+diaryDir="/home/zhang/gitpath/diary"
 dir="$diaryDir/$m"
 file="$dir/$d.md"
 fileUrl="* [$d]($m/$d.md)"
