@@ -11,7 +11,7 @@ else
     dir=$1
     file=$2
     class=$3
-    root="/var/www/html/note"
+    root="/home/zhang/gitpath/note"
     # 判断一下, 内容文件是不是存在的. 不存在就先创建再打开, 存在就直接打开.
     if [ ! -f $root/$file.md ]; then
         sed -i "/* # $class/a * [$file](../$file.md)" $dir/navigation.md

@@ -2,8 +2,8 @@
 # 这是一个写 wiki 的命令, 用法在 $usage 里边
 
 # 声明变量
-dir='/var/www/html/note'
-chaos='/var/www/html/note/chaos'
+dir='/home/zhang/gitpath/note'
+chaos='/home/zhang/gitpath/note/chaos'
 time=$( date +"%m-%d-%H:%M:%S" )
 usage="ww 命令的用法如下: \n    ww : 打开未整理 wiki 的首页;\n   ww 主题名;创建主题或打开该主题的首页;\n    ww [s|g|f|l] 内容名: 为未整理 wiki 相应分类添加内容;\n    ww [s|g|f|l] 内容名 主题名: 为主题的相应分类添加内容"
 
@@ -33,18 +33,18 @@ case $# in
     2) 
         # 如果有两个参数, 第一个参数一定是选项, 通过选项确定分类, 并以在未整理 wiki 下, 创建以第二个参数为名的内容
         case $1 in
-#            s)
-#                bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 事实
-#                ;;
-#            g)
-#                bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 观点
-#                ;;
-#            f)
-#                bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 方法
-#                ;;
-#            l)
-#                bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 逻辑
-#                ;;
+#           s)
+#               bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 事实
+#               ;;
+#           g)
+#               bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 观点
+#               ;;
+#           f)
+#               bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 方法
+#               ;;
+#           l)
+#               bash /home/zhang/myScript/writeNoteContent.sh $chaos $2 逻辑
+#               ;;
             w)
                 if [ -d ${dir}/${2} ]; then
                     vim ${dir}/${2}/navigation.md
