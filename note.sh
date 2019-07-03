@@ -96,7 +96,11 @@ case $# in
                     fi
                     ;;
                 *)
-                    echo $usage
+                    if [! -d $dir/$3]; then
+                        echo '请选创建主题'
+                    else
+                        bash /home/zhang/myScript/writeNoteContent.sh $dir/$3 $2 $1
+                    fi
                     ;;
             esac
             ;;
