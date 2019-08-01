@@ -1,7 +1,7 @@
 #!/bin/bash
 # 为 wiki 创造一个主题
 
-dir="/var/www/html/note"
+dir="/home/zhang/gitpath/note"
 model="/home/zhang/myScript/model/wiki"
 if [ $# == 1 ]; then
   if [ ! -d $dir/$1 ]; then

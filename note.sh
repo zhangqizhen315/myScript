@@ -67,6 +67,13 @@ case $# in
         3)
             # 如果传入三个参数, 第一个为选项, 第二个为内容名, 第三个为主题名
             case $1 in 
+                n)
+                    if [ ! -d $dir/$3 ]; then
+                        echo '请先创建主题'
+                    else 
+                        bash /home/zhang/myScript/writeNoteContent.sh $dir/$3 $2 未整理
+                    fi
+                    ;;
                 s)
                     if [ ! -d $dir/$3 ]; then
                         echo '请先创建主题'
