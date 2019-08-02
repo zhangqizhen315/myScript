@@ -25,6 +25,9 @@ case $# in
             t)
                 bash /home/zhang/myScript/writeNoteContent.sh $chaos $time 随笔记
                 ;;
+            uml)
+                vim $dir/uml
+                ;;
             *)
                 bash /home/zhang/myScript/mksub.sh $1
                 ;;
