@@ -1,0 +1,43 @@
+{
+    "title": "这是 title 的测试",
+    "author": "作者: 张启震",
+    "description": "这是一个测试用的配置文件",
+    "gitbook": "3.2.3",
+    "language": "zh-hans",
+    "root": ".",
+    "plugins": [
+        "-search",
+        "-lunr",
+        "search-plus",
+        "-highlight",
+        "prism",
+        "katex",
+        "mermaid-gb3",
+        "puml",
+        "graph",
+        "chart", 
+        "tbfed-pagefooter",
+        "expandable-chapters-small",
+        "sectionx", 
+        "favicon",
+        "todo",
+        "alerts", 
+        "include-csv"
+    ],
+    "pluginsConfig": {
+        "chat": {
+            "type": "c3"
+        }, 
+        "tbfed-pagefooter": {
+            "modify_label": "该文件修订的时间: ", 
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sectionx": {
+            "tag": "b"
+        },
+        "fovicon": {
+            "shortcut": ""
+        }
+    }
+
+}
