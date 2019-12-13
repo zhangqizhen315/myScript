@@ -17,7 +17,7 @@ case $# in
         # 如果有一个参数, 创建一个主题, 并打开首页, 前提是, 这个参数不是选项
         case $1 in
             s|g|f|l|n)
-                echo $usage
+                echo -e $usage
                 ;;
             w)
                 vim ${chaos}/navigation.md
@@ -63,7 +63,7 @@ case $# in
                 fi
                 ;;
             *)
-                echo $usage
+                echo -e $usage
                 ;;
             esac
             ;;
@@ -115,6 +115,6 @@ case $# in
             esac
             ;;
         *)
-            echo $usage
+            echo -e $usage
             ;;
 esac
