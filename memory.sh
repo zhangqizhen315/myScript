@@ -8,7 +8,7 @@ elif [ $# -eq 0 ] && ! [ -f ~/myScript/moXie/memory/$(date +%y-%m-%d) ]; then
     bash ~/myScript/moXie/addTodayWord.sh
     bash ~/myScript/moXie/todayMemory.sh
 elif [ $1 = '-n' ]; then
-    wc -l ~/myScript/moXie/memory/$(date +%y-%m-%d)
+    cut -d "|" -f2 ~/myScript/moXie/memory/$(date +%y-%m-%d) | sort | uniq -c
 elif [ $1 = '-a' ]; then
     bash ~/myScript/moXie/addTodayWord.sh
     wc -l ~/myScript/moXie/memory/$(date +%y-%m-%d)
