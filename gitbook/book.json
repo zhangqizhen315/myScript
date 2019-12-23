@@ -1,0 +1,59 @@
+{
+    "title": "前台用户手册",
+    "author": "张启震",
+    "description": "actionUltra 前台的使用手册",
+    "gitbook": "3.2.3",
+    "language": "zh-hans",
+    "styles": {
+    },
+    "links": {
+        "sidebar": {
+        },
+        "gitbook": false
+    },
+    "root": ".",
+    "plugins": [
+        "theme-comscore",
+        "back-to-top-button",
+        "image-captions", 
+        "-search",
+        "-lunr",
+        "search-plus",
+        "-highlight",
+        "prism",
+        "katex",
+        "mermaid-gb3",
+        "puml",
+        "graph",
+        "chart", 
+        "tbfed-pagefooter",
+        "expandable-chapters-small",
+        "sectionx", 
+        "favicon",
+        "todo",
+        "alerts", 
+        "include-csv",
+        "tags"
+    ],
+    "pluginsConfig": {
+        "chat": {
+            "type": "c3"
+        }, 
+        "tbfed-pagefooter": {
+            "modify_label": "该文件修订的时间: ", 
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "sectionx": {
+            "tag": "b"
+        },
+        "fovicon": {
+            "shortcut": ""
+        },
+        "image-captions": {
+            "caption": "附图: _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+        },
+        "tags": {
+            "placement": "bottom"
+        }
+    }
+}
