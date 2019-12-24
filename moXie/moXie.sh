@@ -17,7 +17,9 @@ do
 done <<< $(wd $1)
 if [ $lineNumber -gt 0 ]; then
 read -p "请输入单词:" answer
-if [ "$answer" = "$1" ]; then
+answer=$( echo $answer | tr "[:upper:]" "[:lower:]" )
+temp=$( echo $1 | tr "[:upper:]" "[:lower:]" )
+if [ "$answer" = "$temp" ]; then
     read -p "对了"
     if [ $2 -eq 1 ]; then
         echo "$1|2" >> ~/myScript/moXie/memory/$(date -d "+1 day" +%y-%m-%d)
@@ -39,7 +41,7 @@ if [ "$answer" = "$1" ]; then
 else
     echo $1 
     read -p "错了"
-    until [ "$1" = "$answer" ]
+    until [ "$temp" = "$answer" ]
     do
         read -p "请确认:" answer
     done
