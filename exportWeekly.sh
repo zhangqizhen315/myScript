@@ -15,7 +15,9 @@ do
         grep "完成.*${person}" $1 | cut -d "^" -f5  
         echo ""
         echo "下周"
-        grep "[^本][^周].*${person}" $1 | cut -d "^" -f5
+        grep "待办.*${person}" $1 | cut -d "^" -f5
+        grep "开始.*${person}" $1 | cut -d "^" -f5
+        grep "开发.*${person}" $1 | cut -d "^" -f5
     fi
     echo ""
     echo "========"
