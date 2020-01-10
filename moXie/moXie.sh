@@ -4,6 +4,8 @@ clear
 i=0
 word=test
 lineNumber=0
+remainder=$( cat ~/myScript/moXie/memory/$( date +%y-%m-%d ) | wc -l | cut -d " " -f1 )
+echo "还剩 ${remainder} 个"
 cut -d "|" -f2 ~/myScript/moXie/memory/$(date +%y-%m-%d) | sort | uniq -c
 while read line
 do
@@ -30,17 +32,29 @@ if [ "$answer" = "$temp" ]; then
     elif [ $2 -eq 4 ]; then
         echo "$1|5" >> ~/myScript/moXie/memory/$(date -d "+15 day" +%y-%m-%d)
     elif [ $2 -eq 0 ]; then
-        sed -i "3i$1|6" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        if [ ${remainder} -gt 3 ]; then
+            sed -i "3i$1|6" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        else
+            echo "$i|6" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        fi
     elif [ $2 -eq 6 ]; then
-        sed -i "5i$1|7" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        if [ ${remainder} -gt 5 ]; then
+            sed -i "5i$1|7" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        else
+            echo "$i|7" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        fi
     elif [ $2 -eq 7 ]; then
-        sed -i "10i$1|8" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        if [ ${remainder} -gt 10 ]; then
+            sed -i "10i$1|8" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        else
+            echo "$i|8" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        fi
     elif [ $2 -eq 8 ]; then
         echo "$1|1" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
     fi
 else
     echo $1 
-    read -p "错了"
+    echo "错了"
     until [ "$temp" = "$answer" ]
     do
         read -p "请确认:" answer
