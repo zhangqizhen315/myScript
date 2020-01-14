@@ -35,19 +35,19 @@ if [ "$answer" = "$temp" ]; then
         if [ ${remainder} -gt 3 ]; then
             sed -i "3i$1|6" ~/myScript/moXie/memory/$( date +%y-%m-%d )
         else
-            echo "$i|6" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+            echo "$1|6" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
         fi
     elif [ $2 -eq 6 ]; then
         if [ ${remainder} -gt 5 ]; then
             sed -i "5i$1|7" ~/myScript/moXie/memory/$( date +%y-%m-%d )
         else
-            echo "$i|7" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+            echo "$1|7" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
         fi
     elif [ $2 -eq 7 ]; then
         if [ ${remainder} -gt 10 ]; then
             sed -i "10i$1|8" ~/myScript/moXie/memory/$( date +%y-%m-%d )
         else
-            echo "$i|8" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+            echo "$1|8" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
         fi
     elif [ $2 -eq 8 ]; then
         echo "$1|1" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
