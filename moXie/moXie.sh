@@ -59,6 +59,10 @@ else
     do
         read -p "请确认:" answer
     done
-    sed -i "2i$1|0" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        if [ ${remainder} -gt 2 ]; then
+            sed -i "2i$1|0" ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        else
+            echo "$1|0" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+        fi
 fi
 fi
