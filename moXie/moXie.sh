@@ -22,7 +22,6 @@ read -p "请输入单词:" answer
 answer=$( echo $answer | tr "[:upper:]" "[:lower:]" )
 temp=$( echo $1 | tr "[:upper:]" "[:lower:]" )
 if [ "$answer" = "$temp" ]; then
-    read -p "对了"
     if [ $2 -eq 1 ]; then
         echo "$1|2" >> ~/myScript/moXie/memory/$(date -d "+1 day" +%y-%m-%d)
     elif [ $2 -eq 2 ]; then
