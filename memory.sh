@@ -1,6 +1,6 @@
 #!/bin/bash
 
-useage="memory 命令的用法: \n memory : 开始今天的默写; \n memory -n : 查看今日的需要默写的单词数量 \n memory -a : 为今天添加 50 个单词 \n memory -h : 查看帮助"
+useage="memory 命令的用法: \n memory : 开始今天的默写; \n memory -n : 查看今日的需要默写的单词数量 \n memory -a : 为今天添加 50 个单词 \n memory -d 删除当前的第一个单词 \n memory -h : 查看帮助"
 
 todayNamber=$(date -d "today 12:00:00" +%s)
 while read line
@@ -23,6 +23,8 @@ elif [ $1 = '-n' ]; then
 elif [ $1 = '-a' ]; then
     bash ~/myScript/moXie/addTodayWord.sh
     wc -l ~/myScript/moXie/memory/$(date +%y-%m-%d)
+elif [ $1 = '-d' ]; then
+    sed -i "1d" ~/myScript/moXie/memory/$(date +%y-%m-%d)
 elif [ $1 = '-h' ]; then
     echo -e $useage
 else 
