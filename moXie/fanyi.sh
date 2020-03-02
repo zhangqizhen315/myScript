@@ -1,7 +1,12 @@
 #!/bin/bash
 
-wd $1
+while [ true ]
+do
 
-if [[ $( cat ~/myScript/moXie/memory/$( date +%y-%m-%d ) | grep "${1}|" ) = "" ]]; then
-    echo "${1}|1" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
-fi
+    read -p : word
+    echo $word
+    wd $word
+    if [[ $( cat ~/myScript/moXie/memory/$( date +%y-%m-%d ) | grep "${word}|" ) = "" ]]; then
+        echo "${word}|1" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
+    fi
+done
