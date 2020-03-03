@@ -4,7 +4,7 @@
 
 today=$( date +%y-%m-%d )
 path=~/myScript/essay/${today}
-if [ -d "${path}" ]; then ls ${path}
+ls -al ${path}
 read -p "请输入文件名:" filename
 
 if [ ! -d "${path}" ] && [ ! -n ${filename} ]; then
