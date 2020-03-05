@@ -4,14 +4,16 @@
 
 today=$( date +%y-%m-%d )
 path=~/myScript/essay/${today}
-ls -al ${path}
-read -p "请输入文件名:" filename
 
-if [ ! -d "${path}" ] && [ ! -n ${filename} ]; then
+if [ ! -d "${path}" ] ; then
     mkdir ${path}
+    ls -al ${path}
+    read -p "请输入文件名:" filename
     touch ${path}/$filename
     vim ${path}/$filename
-elif [ ! -n ${filename} ]; then 
+else
+    ls -al ${path}
+    read -p "请输入文件名:" filename
     touch ${path}/$filename
     vim ${path}/$filename
 fi 
