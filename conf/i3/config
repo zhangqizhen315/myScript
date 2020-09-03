@@ -294,6 +294,7 @@ gaps inner 10
 #
 
 
+exec --no-startup-id xmodmap ~/.xmodmaprc
 bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 #bindsym $mod+Escape exec xmodmap ~/.config/xmodmap/.xmodmaprc; exec google-chrome
 
