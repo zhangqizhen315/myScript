@@ -4,12 +4,19 @@
 
 # 测试一下, 坚果云的网盘有没有被挂载上
 
+# 因为会产生 0 kb 的文件, 有必要清一下
+
+
 jianGuo=$( df | grep "jianGuo" )
 
 
 if [ "${jianGuo}" = "" ]; then
     exit
 else
+    for emptFile in $( find ~/jianGuo/essay/ -type f -size 0k )
+    do
+        rm $emptFile
+    done
     today=$( date +%y-%m-%d )
     path=~/jianGuo/essay/${today}
     
