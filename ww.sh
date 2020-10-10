@@ -91,7 +91,7 @@ case $# in
                         bash /home/zhang/myScript/writeWikiContent.sh $dir/$3 $2 逻辑
                     fi
                     ;;
-                *)
+               *)
                     echo $usage
                     ;;
             esac
