@@ -196,3 +196,372 @@ This may indicate that pixbuf loaders or the mime database could not be found.
 (evince:28724): Gtk-WARNING **: 16:43:41.288: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.JPY3T0”: 权限不够
 
 (evince:28724): Gtk-WARNING **: 16:43:41.288: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.714: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.750: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.751: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.751: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.751: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:30515): Gtk-WARNING **: 17:06:04.796: Could not load a pixbuf from icon theme.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+** (evince:30515): WARNING **: 17:06:04.805: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.805: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:06:04.805: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:30515): Gtk-WARNING **: 17:06:05.002: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.6BU9T0”: 权限不够
+
+(evince:30515): Gtk-WARNING **: 17:06:05.002: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+** (evince:30515): WARNING **: 17:06:09.032: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:05.859: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:06.233: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:06.739: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:17.550: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:18.441: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(com.github.johnfactotum.Foliate:30615): Gtk-WARNING **: 17:08:25.737: Theme parsing error: <data>:1:17: Expected a string.
+
+** (evince:30515): WARNING **: 17:08:25.891: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.920: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:25.921: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:30515): WARNING **: 17:08:33.355: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:30515): Gtk-WARNING **: 17:08:34.423: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.PHJ6T0”: 权限不够
+
+(evince:30515): Gtk-WARNING **: 17:08:34.423: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(com.github.johnfactotum.Foliate:30615): Gjs-WARNING **: 17:08:36.544: JS ERROR: Gio.IOErrorEnum: Error opening file “/usr/share/com.github.johnfactotum.Foliate/1771937393.json”: 权限不够
+_write@resource:///com/github/johnfactotum/Foliate/js/utils.js:413:18
+later@resource:///com/github/johnfactotum/Foliate/js/utils.js:32:29
+setTimeout/<@resource:///com/github/johnfactotum/Foliate/js/utils.js:21:40
+main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+@/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+(com.github.johnfactotum.Foliate:30615): Gjs-WARNING **: 17:08:36.545: JS ERROR: Error: Could not save file
+_write@resource:///com/github/johnfactotum/Foliate/js/utils.js:421:15
+later@resource:///com/github/johnfactotum/Foliate/js/utils.js:32:29
+setTimeout/<@resource:///com/github/johnfactotum/Foliate/js/utils.js:21:40
+main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+@/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+(com.github.johnfactotum.Foliate:30615): Gjs-WARNING **: 17:08:49.208: JS ERROR: Gio.IOErrorEnum: Error opening file “/usr/share/com.github.johnfactotum.Foliate/1771937393.json”: 权限不够
+_write@resource:///com/github/johnfactotum/Foliate/js/utils.js:413:18
+later@resource:///com/github/johnfactotum/Foliate/js/utils.js:32:29
+setTimeout/<@resource:///com/github/johnfactotum/Foliate/js/utils.js:21:40
+main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+@/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+(com.github.johnfactotum.Foliate:30615): Gtk-WARNING **: 17:09:01.662: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.Z1ZNU0”: 权限不够
+
+(com.github.johnfactotum.Foliate:30615): Gtk-WARNING **: 17:09:01.662: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(com.github.johnfactotum.Foliate:30615): Gjs-WARNING **: 17:09:01.886: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+  main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+  run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+  @/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.666: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.691: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.715: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.715: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.715: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31102): Gtk-WARNING **: 17:14:33.770: Could not load a pixbuf from icon theme.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+** (evince:31102): WARNING **: 17:14:33.774: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.775: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.775: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.781: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.781: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.781: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.781: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31102): WARNING **: 17:14:33.781: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31102): Gtk-WARNING **: 17:14:34.026: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.Q788T0”: 权限不够
+
+(evince:31102): Gtk-WARNING **: 17:14:34.026: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(evince:31102): Gtk-WARNING **: 17:14:35.383: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.YOO4T0”: 权限不够
+
+(evince:31102): Gtk-WARNING **: 17:14:35.383: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.586: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.611: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.637: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31388): Gtk-WARNING **: 17:15:58.692: Could not load a pixbuf from icon theme.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+** (evince:31388): WARNING **: 17:15:58.701: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.701: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.701: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.701: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.701: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31388): WARNING **: 17:15:58.701: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31388): Gtk-WARNING **: 17:15:58.952: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.8EIHU0”: 权限不够
+
+(evince:31388): Gtk-WARNING **: 17:15:58.952: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(evince:31388): Gtk-WARNING **: 17:16:00.012: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.0QN9T0”: 权限不够
+
+(evince:31388): Gtk-WARNING **: 17:16:00.012: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.383: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.402: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.439: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.439: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.439: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31673): Gtk-WARNING **: 17:17:36.493: Could not load a pixbuf from icon theme.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+** (evince:31673): WARNING **: 17:17:36.501: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.501: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.501: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31673): WARNING **: 17:17:36.501: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31673): Gtk-WARNING **: 17:17:36.752: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.NEVOU0”: 权限不够
+
+(evince:31673): Gtk-WARNING **: 17:17:36.752: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(evince:31673): Gtk-WARNING **: 17:17:37.752: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.VXUOU0”: 权限不够
+
+(evince:31673): Gtk-WARNING **: 17:17:37.752: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.438: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.456: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.482: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.482: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.482: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31893): Gtk-WARNING **: 17:20:17.524: Could not load a pixbuf from icon theme.
+This may indicate that pixbuf loaders or the mime database could not be found.
+
+** (evince:31893): WARNING **: 17:20:17.538: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.538: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.538: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+** (evince:31893): WARNING **: 17:20:17.538: 找不到元数据文件 /usr/share/gvfs-metadata/uuid-0A9AD66165F33762
+
+(evince:31893): Gtk-WARNING **: 17:20:17.789: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.RMGFU0”: 权限不够
+
+(evince:31893): Gtk-WARNING **: 17:20:17.789: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(evince:31893): Gtk-WARNING **: 17:20:18.903: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.JNTFU0”: 权限不够
+
+(evince:31893): Gtk-WARNING **: 17:20:18.903: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(com.github.johnfactotum.Foliate:32086): Gtk-WARNING **: 17:21:20.486: Theme parsing error: <data>:1:17: Expected a string.
+
+(com.github.johnfactotum.Foliate:32086): Gjs-WARNING **: 17:21:30.808: JS ERROR: Gio.IOErrorEnum: Error opening file “/usr/share/com.github.johnfactotum.Foliate/1771937393.json”: 权限不够
+_write@resource:///com/github/johnfactotum/Foliate/js/utils.js:413:18
+later@resource:///com/github/johnfactotum/Foliate/js/utils.js:32:29
+setTimeout/<@resource:///com/github/johnfactotum/Foliate/js/utils.js:21:40
+main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+@/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+(com.github.johnfactotum.Foliate:32086): Gjs-WARNING **: 17:21:30.809: JS ERROR: Error: Could not save file
+_write@resource:///com/github/johnfactotum/Foliate/js/utils.js:421:15
+later@resource:///com/github/johnfactotum/Foliate/js/utils.js:32:29
+setTimeout/<@resource:///com/github/johnfactotum/Foliate/js/utils.js:21:40
+main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+@/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+(com.github.johnfactotum.Foliate:32086): Gjs-WARNING **: 17:21:42.955: JS ERROR: Gio.IOErrorEnum: Error opening file “/usr/share/com.github.johnfactotum.Foliate/1771937393.json”: 权限不够
+_write@resource:///com/github/johnfactotum/Foliate/js/utils.js:413:18
+later@resource:///com/github/johnfactotum/Foliate/js/utils.js:32:29
+setTimeout/<@resource:///com/github/johnfactotum/Foliate/js/utils.js:21:40
+main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+@/usr/bin/com.github.johnfactotum.Foliate:9:17
+
+
+(com.github.johnfactotum.Foliate:32086): Gtk-WARNING **: 17:25:37.788: Attempting to store changes into '/usr/share/recently-used.xbel', but failed: Failed to create file “/usr/share/recently-used.xbel.QGHFU0”: 权限不够
+
+(com.github.johnfactotum.Foliate:32086): Gtk-WARNING **: 17:25:37.789: Attempting to set the permissions of '/usr/share/recently-used.xbel', but failed: 没有那个文件或目录
+
+(com.github.johnfactotum.Foliate:32086): Gjs-WARNING **: 17:25:37.791: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+  main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+  run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+  @/usr/bin/com.github.johnfactotum.Foliate:9:17
+
