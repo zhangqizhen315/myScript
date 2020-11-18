@@ -9,3 +9,4 @@ for line in $( cat $1 )
 do
     echo "ile : $line"
 done
+
