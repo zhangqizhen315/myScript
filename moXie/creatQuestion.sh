@@ -8,21 +8,18 @@ read -p "请输入答案:" answer
 
 shiFouCunZai=$( grep "^${answer}.*" ~/myScript/moXie/answerBook )
 
-if [[ "$shiFouCunZai" == "" ]] ; then
-    echo "yes"
-fi
-
-while [[ "$shiFouCunZai" != "" ]]
+while [ "${shiFouCunZai}" ]
 do
     echo "该问题已存在"
     read -p "请输入答案:" answer
+    shiFouCunZai=$( grep "^${answer}.*" ~/myScript/moXie/answerBook )
 done
 
 
-#
-#echo "${answer}|${qa_id}" >> answerBook
-#
-#touch ${qa}/${qa_id}
+
+echo "${answer}|${qa_id}" >> ~/myScript/moXie/answerBook
+
+touch ${qa}/${qa_id}
 
 
 
