@@ -4,7 +4,7 @@ __build_info:
     default: 1576692787
     default.custom: 0
     luna_pinyin_simp.custom: 0
-    luna_pinyin_simp.schema: 1597150622
+    luna_pinyin_simp.schema: 1606078821
 custom_phrase:
   db_class: stabledb
   dictionary: ""

@@ -1,0 +1,50 @@
+filter 方案
+open_with q
+search 文档/58
+search 58
+filter 58所
+search document
+filter doc
+filter 罗素
+rename old
+shell 
+filter 史
+filter 哲学史
+search 文档
+filter 工商
+filter md
+filter 爱
+open_with 
+open_with 1
+bulkrename 
+filter 历史
+filter 工作
+filter
+delete 
+filter .pdf
+filter 
+!mv ~/图片
+mv /图片
+filter pdfk
+filter pdf
+filter  
+rename 选区_136.png
+search 图片
+search 下载
+search 论 
+open_with foliate
+search 论语
+search 论
+open_with%space
+open_with libreoffice
+find zf
+search goo
+delete
+fin
+search 
+filter 积分
+open_with 2
+search 长
+
+search dpf
+search pdf

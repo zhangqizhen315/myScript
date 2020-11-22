@@ -3,7 +3,7 @@ __build_info:
   timestamps:
     default: 1576692787
     default.custom: 0
-    wubi86.custom: 1597150666
+    wubi86.custom: 1606078821
     wubi86.schema: 1576692787
 engine:
   processors:
@@ -59,10 +59,6 @@ key_binder:
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
     - {accept: "Shift+space", toggle: full_shape, when: always}
     - {accept: "Control+period", toggle: ascii_punct, when: always}
-    - {when: has_menu, accept: space, send: space}
-    - {when: composing, accept: space, send: Escape}
-    - { when: has_menu, accept: semicolon, send: 2  }
-    - { when: has_menu, accept: apostrophe, send: 3  }
   import_preset: default
 menu:
   page_size: 5
@@ -180,15 +176,8 @@ translator:
   dictionary: wubi86
   disable_user_dict_for_patterns:
     - "^z.*$"
-  enable_charset_filter: true #是否开启定符集过滤
-  enable_user_dict: false #是否开启用户词典
-  enable_encoder: false #是否开启自动造词
-  enable_sentence: false #是否开启自动造词
-  encode_commit_history: false #是否对已上屏的词自动成词
+  enable_charset_filter: true
+  enable_encoder: true
+  enable_sentence: true
+  encode_commit_history: true
   max_phrase_length: 4
-
-speller:
-    delimiter: ";"
-    max_code_length: 4
-    auto_select: false #顶字上屏
-    auto_select_unique_candidate: false #无重码自动上屏
