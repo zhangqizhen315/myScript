@@ -1,0 +1,43 @@
+# Rime dictionary: wubi86
+# encoding: utf-8
+#
+# Changelog
+# Gong Chen <chen.sst@gmail.com>
+#     - Convert to Rime dictionary format.
+# Yu Yuwei <acevery@gmail.com>
+#     - Use original level 1 and 2 JianMa.
+# Yu Yuwei <acevery@gmail.com>
+#     - Update to Jidian 6, provided by Chen Xing
+# Yu Yuwei <acevery@gmail.com>
+#     - Add freqs from google.
+#     - Fix punctuation freqs
+# Chen Xing <cxcxcxcx@gmail.com>
+#     - Convert from JidianWubi table
+#
+# Original table author
+# Wozy <wozy.in@gmail.com>
+
+# 这是我自己的扩展词库, 基本的想法是定义一些自己常用输入内容, 通过输入法来实现自定义的快捷输入.
+
+---
+name: my_ex
+version: "2019.06.23"
+sort: by_weight
+columns:
+  - text
+  - code
+  - weight
+  - stem
+encoder:
+  exclude_patterns:
+    - '^z.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 10]
+      formula: "AaBaCaZa"
+...
+
+[用户管理](../用户管理/用户管理概述.md) urlyhglgs 1 

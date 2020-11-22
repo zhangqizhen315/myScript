@@ -1,0 +1,15 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.2.9
+#@/tick	9
+#@/user_id	cf997197-045b-493e-a5f1-5892b82db517
+bo 	波	c=1 d=1 t=3
+fei huang teng da 	飛黃騰達	c=1 d=1 t=9
+fen 	分	c=1 d=1 t=7
+hu 	胡	c=1 d=1 t=1
+pa 	怕	c=1 d=1 t=5
+shao 	少	c=1 d=1 t=2
+wan cheng 	完成	c=1 d=1 t=4
+xi an 	西安	c=1 d=1 t=6
+zhong xin 	中心	c=1 d=1 t=8
