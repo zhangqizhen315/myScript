@@ -59,6 +59,8 @@ key_binder:
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
     - {accept: "Shift+space", toggle: full_shape, when: always}
     - {accept: "Control+period", toggle: ascii_punct, when: always}
+    - {when: has_menu, accept: space, send: space}
+    - {when: composing, accept: space, send: Escape}
   import_preset: default
 menu:
   page_size: 5

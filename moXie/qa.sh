@@ -11,7 +11,7 @@ qa_id=$( grep "${1}" ~/myScript/moXie/answer/$(date +%y-%m-%d) | cut -d "|" -f2 
 if [ -f ~/myScript/moXie/qa/${qa_id} ]; then
     cat ~/myScript/moXie/qa/answerBook/${qa_id}
 fi
-if [ $lineNumber -gt 0 ]; then
+if [ -f ~/myScript/moXie/qa/${qa_id} ]; then
 read -p "请输入单词:" answer
 answer=$( echo $answer | tr "[:upper:]" "[:lower:]" )
 temp=$( echo $1 | tr "[:upper:]" "[:lower:]" )
