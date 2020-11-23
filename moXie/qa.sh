@@ -17,33 +17,33 @@ read -p "请输入单词:" answer
 temp=$1
 if [ "$answer" = "$temp" ]; then
     if [ $2 -eq 1 ]; then
-        echo "$1|${qa_id}|2" >> ~/myScript/moXie/qa/$(date -d "+1 day" +%y-%m-%d)
+        echo "$1|${qa_id}|2" >> ~/myScript/moXie/answer/$(date -d "+1 day" +%y-%m-%d)
     elif [ $2 -eq 2 ]; then
-        echo "$1|${qa_id}|3" >> ~/myScript/moXie/qa/$(date -d "+3 day" +%y-%m-%d)
+        echo "$1|${qa_id}|3" >> ~/myScript/moXie/answer/$(date -d "+3 day" +%y-%m-%d)
     elif [ $2 -eq 3 ]; then
-        echo "$1|${qa_id}|4" >> ~/myScript/moXie/qa/$(date -d "+7 day" +%y-%m-%d)
+        echo "$1|${qa_id}|4" >> ~/myScript/moXie/answer/$(date -d "+7 day" +%y-%m-%d)
     elif [ $2 -eq 4 ]; then
-        echo "$1|${qa_id}|5" >> ~/myScript/moXie/qa/$(date -d "+15 day" +%y-%m-%d)
+        echo "$1|${qa_id}|5" >> ~/myScript/moXie/answer/$(date -d "+15 day" +%y-%m-%d)
     elif [ $2 -eq 0 ]; then
         if [ ${remainder} -gt 3 ]; then
-            sed -i "3i$1|${qa_id}|6" ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            sed -i "3i$1|${qa_id}|6" ~/myScript/moXie/answer/$( date +%y-%m-%d )
         else
-            echo "$1|${qa_id}|6" >> ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            echo "$1|${qa_id}|6" >> ~/myScript/moXie/answer/$( date +%y-%m-%d )
         fi
     elif [ $2 -eq 6 ]; then
         if [ ${remainder} -gt 5 ]; then
-            sed -i "5i$1|${qa_id}|7" ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            sed -i "5i$1|${qa_id}|7" ~/myScript/moXie/answer/$( date +%y-%m-%d )
         else
-            echo "$1|${qa_id}|7" >> ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            echo "$1|${qa_id}|7" >> ~/myScript/moXie/answer/$( date +%y-%m-%d )
         fi
     elif [ $2 -eq 7 ]; then
         if [ ${remainder} -gt 10 ]; then
-            sed -i "10i$1|${qa_id}|8" ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            sed -i "10i$1|${qa_id}|8" ~/myScript/moXie/answer/$( date +%y-%m-%d )
         else
-            echo "$1|${qa_id}|8" >> ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            echo "$1|${qa_id}|8" >> ~/myScript/moXie/answer/$( date +%y-%m-%d )
         fi
     elif [ $2 -eq 8 ]; then
-        echo "$1|${qa_id}|1" >> ~/myScript/moXie/qa/$( date +%y-%m-%d )
+        echo "$1|${qa_id}|1" >> ~/myScript/moXie/answer/$( date +%y-%m-%d )
     fi
 else
     echo $1 
@@ -53,9 +53,9 @@ else
         read -p "请确认:" answer
     done
         if [ ${remainder} -gt 2 ]; then
-            sed -i "2i$!|${qa_id}|0" ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            sed -i "2i$1|${qa_id}|0" ~/myScript/moXie/answer/$( date +%y-%m-%d )
         else
-            echo "$!|${qa_id}|0" >> ~/myScript/moXie/qa/$( date +%y-%m-%d )
+            echo "$1|${qa_id}|0" >> ~/myScript/moXie/answer/$( date +%y-%m-%d )
         fi
 fi
 fi
