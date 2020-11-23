@@ -126,7 +126,7 @@ alias nt='bash ~/myScript/note.sh'
 #alias readnote='bash ~/myScript/readNote.sh'
 alias plantuml='java -jar ~/myScript/tools/plantuml.jar'
 alias allgit='zsh ~/myScript/allgit.sh'
-alias memory='zsh ~/myScript/memory.sh'
+alias memory='zsh ~/myScript/moXie/memory.sh'
 alias rn='bash ~/readnote/rn/readnote.sh'
 alias fy='bash ~/myScript/moXie/fanyi.sh'
 

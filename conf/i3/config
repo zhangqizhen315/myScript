@@ -59,7 +59,7 @@ floating_modifier $mod
 #bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Return exec xfce4-terminal --role=floating
 bindsym $mod+p exec xfce4-terminal -e ranger --role=floating
-bindsym $mod+m exec xfce4-terminal -e /home/zhang/myScript/memory.sh --role=floating
+bindsym $mod+m exec xfce4-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
 bindsym $mod+shift+m exec xfce4-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
 bindsym $mod+shift+p exec xfce4-terminal -e /home/zhang/myScript/essay.sh --role=floating
 
