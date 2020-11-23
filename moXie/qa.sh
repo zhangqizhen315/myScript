@@ -6,9 +6,10 @@ answer=test
 lineNumber=0
 remainder=$( cat ~/myScript/moXie/answer/$( date +%y-%m-%d ) | wc -l | cut -d " " -f1 )
 echo "还剩 ${remainder} 个"
-cut -d "|" -f2 ~/myScript/moXie/answer/$(date +%y-%m-%d) | sort | uniq -c
-if [ -f ~/myScript/moXie/answer/${1} ]; then
-    qa_id=$( grep "${1}" ~/myScript/moXie/qa/answerBook | cut -d "|" -f1 )
+cut -d "|" -f3 ~/myScript/moXie/answer/$(date +%y-%m-%d) | sort | uniq -c
+qa_id=$( grep "${1}" ~/myScript/moXie/answer/$(date +%y-%m-%d) | cut -d "|" -f2 )
+if [ -f ~/myScript/moXie/qa/${qa_id} ]; then
+    cat ~/myScript/moXie/qa/answerBook/${qa_id}
 fi
 if [ $lineNumber -gt 0 ]; then
 read -p "请输入单词:" answer
