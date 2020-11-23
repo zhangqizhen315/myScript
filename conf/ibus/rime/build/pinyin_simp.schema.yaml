@@ -4,8 +4,8 @@ __build_info:
     default: 1576692787
     default.custom: 0
     pinyin_simp.custom: 0
-    pinyin_simp.schema: 1606078821
-    symbols: 1606078821
+    pinyin_simp.schema: 1606092507
+    symbols: 1606092507
     symbols.custom: 0
 engine:
   processors:
