@@ -565,3 +565,11 @@ run@resource:///org/gnome/gjs/modules/script/package.js:222:19
   run@resource:///org/gnome/gjs/modules/script/package.js:222:19
   @/usr/bin/com.github.johnfactotum.Foliate:9:17
 
+
+(com.github.johnfactotum.Foliate:54511): Gtk-WARNING **: 15:54:24.198: Theme parsing error: <data>:1:17: Expected a string.
+
+(com.github.johnfactotum.Foliate:54511): Gjs-WARNING **: 15:55:00.615: Unhandled promise rejection. To suppress this warning, add an error handler to your promise chain with .catch() or a try-catch block around your await expression. Stack trace of the failed promise:
+  main@resource:///com/github/johnfactotum/Foliate/js/main.js:474:24
+  run@resource:///org/gnome/gjs/modules/script/package.js:222:19
+  @/usr/bin/com.github.johnfactotum.Foliate:9:17
+
