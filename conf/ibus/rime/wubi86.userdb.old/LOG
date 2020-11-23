@@ -1,0 +1,5 @@
+2020/11/23-10:14:52.279680 140390378608384 Log #347: 0 ops saved to Table #349 OK
+2020/11/23-10:14:52.279770 140390378608384 Archiving /home/zhang/.config/ibus/rime/wubi86.userdb/000347.log: OK
+2020/11/23-10:14:52.281927 140390378608384 Table #348: 21300 entries OK
+2020/11/23-10:14:52.282026 140390378608384 Archiving /home/zhang/.config/ibus/rime/wubi86.userdb/MANIFEST-000346: OK
+2020/11/23-10:14:52.311614 140390378608384 **** Repaired leveldb /home/zhang/.config/ibus/rime/wubi86.userdb; recovered 1 files; 469032 bytes. Some data may have been lost. ****
