@@ -207,13 +207,17 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-mod "other_key_map" {
+mod "otherkeymap" {
 
         exec --no-startup-id xmodmap ~/.config/xmodmap/esc_j
         bindsym Return mode "default"
         bindsym Escape mode "default"
 
 }
+
+bindsym $mod+i mode "resize"
+
+
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -300,6 +304,6 @@ gaps inner 10
 #
 exec --no-startup-id xmodmap ~/.config/xmodmap/.xmodmaprc
 
-bindsym $mod+o exec xmodmap ~/.config/xmodmap/.xmodmaprc
-bindsym $mod+i exec xmodmap ~/.config/xmodmap/esc_j
+#bindsym $mod+o exec xmodmap ~/.config/xmodmap/.xmodmaprc
+#bindsym $mod+i exec xmodmap ~/.config/xmodmap/esc_j
 
