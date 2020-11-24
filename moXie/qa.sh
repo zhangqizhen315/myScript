@@ -1,11 +1,13 @@
 #!/bin/bash
 
-clear
+#clear
 i=0
 #qa_answer=test
 lineNumber=0
 remainder=$( cat ~/myScript/moXie/answer/$( date +%y-%m-%d ) | wc -l | cut -d " " -f1 )
 echo "还剩 ${remainder} 个"
+echo "========================="
+echo $1
 cut -d "|" -f3 ~/myScript/moXie/answer/$(date +%y-%m-%d) | sort | uniq -c
 qa_id=$( grep "${1}" ~/myScript/moXie/answer/$(date +%y-%m-%d) | cut -d "|" -f2 )
 if [ -f ~/myScript/moXie/qa/${qa_id} ]; then

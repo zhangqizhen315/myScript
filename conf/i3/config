@@ -62,6 +62,8 @@ bindsym $mod+p exec xfce4-terminal -e ranger --role=floating
 bindsym $mod+m exec xfce4-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
 bindsym $mod+shift+m exec xfce4-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
 bindsym $mod+shift+p exec xfce4-terminal -e /home/zhang/myScript/essay.sh --role=floating
+bindsym $mod+n exec xfce4-terminal -e /home/zhang/myScript/moXie/answer.sh
+bindsym $mod+shift+n exec xfce4-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh
 
 #bindsym $mod+ctrl+n exec  xfce4-terminal -e /home/zhang/readnote/rn/readnote.sh --role=floating
 bindsym $mod+c exec  xfce4-terminal -e calcurse --role=floating
@@ -306,3 +308,6 @@ mode "changekeymap" {
 }
 
 bindsym $mod+i exec xmodmap ~/.config/xmodmap/esc_j; mode "changekeymap"
+
+
+
