@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #clear
+echo "执行到 qa.sh 了 传入参数是 ${@} $2 $3 $4"
+read 
 i=0
 #qa_answer=test
 lineNumber=0
@@ -8,20 +10,19 @@ remainder=$( cat ~/myScript/moXie/answer/$( date +%y-%m-%d ) | wc -l | cut -d " 
 echo "还剩 ${remainder} 个"
 reply=$( echo $@ | awk -F " " '{$NF="";print$0}' )
 level=$( echo $@ | awk -F " " '{print $NF}' )
-echo $reply
-echo $level
-
 cut -d "|" -f3 ~/myScript/moXie/answer/$(date +%y-%m-%d) | sort | uniq -c
-qa_id=$( grep ${reply} ~/myScript/moXie/answer/$(date +%y-%m-%d) | cut -d "|" -f2 )
+qa_id=$(echo ${reply} | grep -f ~/myScript/moXie/answer/$(date +%y-%m-%d) | cut -d "|" -f2 )
 if [ -f ~/myScript/moXie/qa/${qa_id} ]; then
     cat ~/myScript/moXie/qa/${qa_id}
+else
+    read -p "？？？？？？？？???"
 fi
 if [ -f ~/myScript/moXie/qa/${qa_id} ]; then
 read -p "请输入单词:" answer
 #answer=$( echo $answer | tr "[:upper:]" "[:lower:]" )
-temp=${reply}
-echo "temp 是" $temp
-echo "answer 是" $answer
+temp=$( echo ${reply} | sed 's/[ \t]*//g' )
+echo "temp 是" $temp"."
+echo "answer 是" $answer"."
 
 if [ "$answer" = "$temp" ]; then
     if [ $level -eq 1 ]; then

@@ -2,6 +2,7 @@
 
 # 这个脚本用于从当日问题中循环取出问题传入 qa.sh 脚本, 直到当日问题为空
 
+read -p "执行到 todayanswer 了"
 today=$(date +%y-%m-%d)
 # 获取当日问题数
 i=$( wc -l ~/myScript/moXie/answer/$today | cut -d " " -f1 )
