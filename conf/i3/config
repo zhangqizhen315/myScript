@@ -292,8 +292,17 @@ gaps inner 10
 #
 exec --no-startup-id xmodmap ~/.config/xmodmap/.xmodmaprc
 
-bindsym $mod+Escape exec xmodmap ~/.config/xmodmap/.xmodmaprc
-bindsym $mod+i exec xmodmap ~/.config/xmodmap/esc_j
 
-bindsym ctrl+i exec google-chrome
 
+#bindsym $mod+Escape exec xmodmap ~/.config/xmodmap/.xmodmaprc; exec google-chrome
+
+#bindsym ctrl+i exec google-chrome
+
+
+mode "changekeymap" {
+    
+    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
+    bindsym Escape mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
+}
+
+bindsym $mod+i exec xmodmap ~/.config/xmodmap/esc_j; mode "changekeymap"
