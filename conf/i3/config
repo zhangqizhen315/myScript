@@ -207,7 +207,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-mod "otherkeymap" {
+mode "otherkeymap" {
 
         exec --no-startup-id xmodmap ~/.config/xmodmap/esc_j
         bindsym Return mode "default"
