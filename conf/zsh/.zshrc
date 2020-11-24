@@ -130,6 +130,11 @@ alias memory='zsh ~/myScript/moXie/memory.sh'
 alias rn='bash ~/readnote/rn/readnote.sh'
 alias fy='bash ~/myScript/moXie/fanyi.sh'
 
+alias answer='bash ~/myScript/moXie/qa.sh'
+alias cq='bash ~/myScript/moXie/creatQuestion.sh'
+alias ob='bash ~/myScript/readnote/openbook.sh'
+
+
 alias ra=ranger
 alias pdf=evince
 
