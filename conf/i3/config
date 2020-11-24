@@ -301,7 +301,7 @@ exec --no-startup-id xmodmap ~/.config/xmodmap/.xmodmaprc
 
 mode "changekeymap" {
     
-    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
+#    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
     bindsym Escape mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
 }
 
