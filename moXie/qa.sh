@@ -2,7 +2,7 @@
 
 clear
 #echo "执行到 qa.sh 了 传入参数是 ${@} $2 $3 $4"
-read 
+#read 
 i=0
 #qa_answer=test
 lineNumber=0
