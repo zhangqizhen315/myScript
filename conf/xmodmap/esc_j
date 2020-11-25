@@ -29,3 +29,4 @@ keycode  53 = Delete NoSymbol Delete
 
 
 
+keycode  47 = BackSpace BackSpace BackSpace BackSpace
