@@ -62,7 +62,7 @@ bindsym $mod+p exec xfce4-terminal -e ranger --role=floating
 bindsym $mod+m exec xfce4-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
 bindsym $mod+shift+m exec xfce4-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
 bindsym $mod+shift+p exec xfce4-terminal -e /home/zhang/myScript/essay.sh --role=floating
-bindsym $mod+n exec xfce4-terminal -e /home/zhang/myScript/moXie/answer.sh
+bindsym $mod+n exec xfce4-terminal -e /home/zhang/myScript/moXie/answer.sh --role=floating
 bindsym $mod+shift+n exec xfce4-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh
 
 #bindsym $mod+ctrl+n exec  xfce4-terminal -e /home/zhang/readnote/rn/readnote.sh --role=floating
