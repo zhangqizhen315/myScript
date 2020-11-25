@@ -70,7 +70,7 @@ bindsym $mod+c exec  xfce4-terminal -e calcurse --role=floating
 
 for_window [window_role="^floating$"] floating enable
 # kill focused window
-bindsym $mod+shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec gnome-do
