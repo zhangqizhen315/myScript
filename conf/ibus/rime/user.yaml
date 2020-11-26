@@ -1,9 +1,2 @@
 var:
-<<<<<<< HEAD
-  last_build_time: 1606268220
-=======
-  last_build_time: 1606250874
->>>>>>> 6797decc8f9958e3d3f888e6fd84856292ecacbd
-  previously_selected_schema: wubi86
-  schema_access_time:
-    wubi86: 1606180559
+  last_build_time: 1606351783
