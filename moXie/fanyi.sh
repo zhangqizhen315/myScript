@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-while [ true ]
-do
+#while [ true ]
+#do
     clear
     read -p : word
     echo $word
@@ -11,4 +11,4 @@ do
         echo "${word}|1" >> ~/myScript/moXie/memory/$( date +%y-%m-%d )
     fi
     read
-done
+#done
