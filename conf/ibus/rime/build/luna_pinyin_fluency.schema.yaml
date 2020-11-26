@@ -5,7 +5,7 @@ __build_info:
     default.custom: 0
     luna_pinyin_fluency.custom: 0
     luna_pinyin_fluency.schema: 1576692787
-    symbols: 1606165523
+    symbols: 1606092507
     symbols.custom: 0
 custom_phrase:
   db_class: stabledb

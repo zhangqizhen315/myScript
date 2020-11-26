@@ -5,7 +5,7 @@ __build_info:
     cangjie5.schema: 1576692787
     default: 1576692787
     default.custom: 0
-    symbols: 1606165523
+    symbols: 1606092507
     symbols.custom: 0
 abc_segmentor:
   extra_tags:
