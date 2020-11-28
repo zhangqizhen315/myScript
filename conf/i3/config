@@ -292,10 +292,9 @@ gaps inner 10
 
 # 运行 xmodmap
 #
-exec --no-startup-id xmodmap ~/.config/xmodmap/.xmodmaprc
 
 
-
+bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 #bindsym $mod+Escape exec xmodmap ~/.config/xmodmap/.xmodmaprc; exec google-chrome
 
 #bindsym ctrl+i exec google-chrome
@@ -328,10 +327,10 @@ mode "changekeymap" {
         bindsym $mod+Shift+0 move container to workspace 0
 
         #    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
-    bindsym a mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
+    bindsym a mode "default"; exec xmodmap .xmodmaprc
 }
 
-bindsym $mod+i exec xmodmap ~/.config/xmodmap/esc_j; mode "changekeymap"
+bindsym $mod+i exec xmodmap ~/myScript/conf/xmodmap/esc_j; mode "changekeymap"
 
 
 

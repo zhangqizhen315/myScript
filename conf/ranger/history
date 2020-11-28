@@ -1,4 +1,3 @@
-open_with 1
 bulkrename 
 filter 历史
 filter 工作
@@ -10,7 +9,6 @@ filter
 mv /图片
 filter pdfk
 filter pdf
-filter  
 rename 选区_136.png
 search 图片
 search 下载
@@ -48,3 +46,5 @@ rename a_14499620.pdf
 rename 不为人知的奥德修斯.pdf
 rename 政治制度与政治箴言.pdf
 rename 劳作与时日笺释.pdf
+filter mp3
+filter  
