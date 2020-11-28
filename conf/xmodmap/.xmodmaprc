@@ -1,10 +1,9 @@
-clear Lock
-clear Mod4
-clear Control
+clear lock
+clear control
 clear Mod1
 
 keycode   8 =
-keycode   9 = Escape NoSymbol Escape
+!keycode   9 = Escape NoSymbol Escape
 keycode  64 = Escape NoSymbol Escape
 
 keycode  10 = 1 exclam 1 exclam
@@ -34,7 +33,7 @@ keycode  33 = p P p P
 keycode  34 = bracketleft braceleft bracketleft braceleft
 keycode  35 = bracketright braceright bracketright braceright
 keycode  36 = Return NoSymbol Return
-keycode  66 = Control_L NoSymbol Control_L
+!keycode  66 = Control_L NoSymbol Control_L
 keycode  38 = a A a A
 keycode  39 = s S s S
 keycode  40 = d D d D
