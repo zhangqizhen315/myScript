@@ -1,4 +1,8 @@
 aged|4
+<<<<<<< HEAD
+=======
+content|4
+>>>>>>> dev
 its|4
 pair|4
 single|4
@@ -7,6 +11,7 @@ actively|4
 rooted|4
 view|4
 dialog|4
+<<<<<<< HEAD
 relaunch|4
 confirm|4
 zoom|4
@@ -21,3 +26,5 @@ expects|4
 absolute|4
 notation|4
 letter|4
+=======
+>>>>>>> dev
