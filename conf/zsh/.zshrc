@@ -133,6 +133,7 @@ alias fy='bash ~/myScript/moXie/fanyi.sh'
 alias answer='bash ~/myScript/moXie/answer.sh'
 alias cq='bash ~/myScript/moXie/creatQuestion.sh'
 alias ob='bash ~/myScript/readnote/openbook.sh'
+alias kjv='~/kjv/kjv'
 
 
 alias ra=ranger

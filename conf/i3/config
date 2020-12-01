@@ -59,14 +59,14 @@ floating_modifier $mod
 #bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Return exec xfce4-terminal --role=floating
 bindsym $mod+p exec gnome-terminal -e ranger --role=floating
-bindsym $mod+m exec gnome-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
-bindsym $mod+shift+m exec gnome-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
-bindsym $mod+shift+p exec xfce4-terminal -e /home/zhang/myScript/essay.sh --role=floating
-bindsym $mod+n exec xfce4-terminal -e /home/zhang/myScript/moXie/answer.sh --role=floating
-bindsym $mod+shift+n exec xfce4-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh
+bindsym $mod+shift+m exec gnome-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
+bindsym $mod+m exec gnome-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
+bindsym $mod+shift+p exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
+bindsym $mod+n exec gnome-terminal -e /home/zhang/myScript/moXie/answer.sh --role=floating
+bindsym $mod+shift+n exec gnome-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh
 
 #bindsym $mod+ctrl+n exec  xfce4-terminal -e /home/zhang/readnote/rn/readnote.sh --role=floating
-bindsym $mod+c exec  xfce4-terminal -e calcurse --role=floating
+bindsym $mod+c exec  gnome-terminal -e calcurse --role=floating
 
 for_window [window_role="^floating$"] floating enable
 # kill focused window
@@ -256,6 +256,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id rclone mount jianGuo:myfile ~/jianGuo --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 &
 exec --no-startup-id ~/myScript/allgit.sh
 #exec --no-startup-id oneko
+exec --no-startup-id guake
 
 
 #exec --no-startup-id i3-msg 'workspace 1; exec xfce4-terminal -e ranger;layout splitv;split vertical;exec xfce4-terminal -e "termsaver clock";exec  xfce4-terminal;workspace 2;exec google-chrome --app=https://pomotodo.com/app/;exec netease-cloud-music;'
