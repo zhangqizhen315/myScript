@@ -294,7 +294,6 @@ gaps inner 10
 # 运行 xmodmap
 #
 
-
 exec --no-startup-id xmodmap ~/.xmodmaprc
 bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 #bindsym $mod+Escape exec xmodmap ~/.config/xmodmap/.xmodmaprc; exec google-chrome
@@ -336,3 +335,8 @@ bindsym $mod+i exec xmodmap ~/myScript/conf/xmodmap/esc_j; mode "changekeymap"
 
 
 
+
+
+
+# https://en.wikipedia.org/wiki/
+# google-chrome --app=https://web.wechat.com/
