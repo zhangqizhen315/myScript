@@ -1,3 +1,6 @@
+bulkrename 
+filter 历史
+filter 工作
 filter
 delete 
 filter .pdf
@@ -45,6 +48,3 @@ rename 政治制度与政治箴言.pdf
 rename 劳作与时日笺释.pdf
 filter mp3
 filter  
-search 文档
-search docu
-search 中科芯
