@@ -1,0 +1,12 @@
+keycode 111 = Up NoSymbol Up
+keycode 116 = Down NoSymbol Down
+keycode 113 = Left NoSymbol Left
+keycode 114 = Right NoSymbol Right
+
+keycode 110 = Home NoSymbol Home
+keycode 112 = Prior NoSymbol Prior
+keycode 115 = End NoSymbol End
+keycode 117 = Next NoSymbol Next
+
+
+keycode  22 = BackSpace BackSpace BackSpace BackSpace
