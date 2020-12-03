@@ -1,13 +1,13 @@
-keycode 111 = Up NoSymbol Up
+keycode  45 = Up NoSymbol Up
 keycode  44 = Down NoSymbol Down
-keycode 113 = Left NoSymbol Left
-keycode 114 = Right NoSymbol Right
+keycode  46 = Left NoSymbol Left
+keycode  43 = Right NoSymbol Right
 
-keycode 110 = Home NoSymbol Home
-keycode 112 = Prior NoSymbol Prior
-keycode 115 = End NoSymbol End
-keycode 117 = Next NoSymbol Next
+keycode  42 = Home NoSymbol Home
+keycode  40 = Prior NoSymbol Prior
+keycode  39 = End NoSymbol End
+keycode  41 = Next NoSymbol Next
 
 
-keycode  22 = BackSpace BackSpace BackSpace BackSpace
+keycode  47 = BackSpace BackSpace BackSpace BackSpace
 keycode  53 = Delete NoSymbol Delete
