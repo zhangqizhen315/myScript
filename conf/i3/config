@@ -349,7 +349,9 @@ mod "open" {
         bindsym r exec gnome-terminal -e ranger --role=floating
         bindsym t exec gnome-terminal
         bindsym i exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
-        bindsym o exec 
+        bindsym a exec audacity 
+        bindsym shift+a exec anki
+        bindsym s 
         
         
 }
