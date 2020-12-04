@@ -300,7 +300,6 @@ bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 
 #bindsym ctrl+i exec google-chrome
 
-
 mode "changekeymap" {
     
         # to workspace
@@ -340,3 +339,37 @@ bindsym $mod+i exec xmodmap ~/myScript/conf/xmodmap/esc_j; mode "changekeymap"
 
 # https://en.wikipedia.org/wiki/
 # google-chrome --app=https://web.wechat.com/
+#
+
+mod "open" {
+        bindsym q exec qq
+        bindsym w exec google-chrome --app=https://en.wikipedia.org/wiki/
+        bindsym shift+w exec google-chrome --app=https://en.wikipedia.org/wiki/
+        bindsym e exec google-chrome
+        bindsym r exec gnome-terminal -e ranger --role=floating
+        bindsym t exec gnome-terminal
+        bindsym i exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
+        bindsym o exec 
+        
+        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
