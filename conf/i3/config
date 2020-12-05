@@ -58,12 +58,12 @@ floating_modifier $mod
 # start a terminal
 #bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Return exec xfce4-terminal --role=floating
-bindsym $mod+p exec gnome-terminal -e ranger --role=floating
-bindsym $mod+shift+m exec gnome-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
-bindsym $mod+m exec gnome-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
-bindsym $mod+shift+p exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
-bindsym $mod+n exec gnome-terminal -e /home/zhang/myScript/moXie/answer.sh --role=floating
-bindsym $mod+shift+n exec gnome-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh
+#bindsym $mod+p exec gnome-terminal -e ranger --role=floating
+#bindsym $mod+shift+m exec gnome-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
+#bindsym $mod+m exec gnome-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
+#bindsym $mod+shift+p exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
+#bindsym $mod+n exec gnome-terminal -e /home/zhang/myScript/moXie/answer.sh --role=floating
+#bindsym $mod+shift+n exec gnome-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh
 
 #bindsym $mod+ctrl+n exec  xfce4-terminal -e /home/zhang/readnote/rn/readnote.sh --role=floating
 bindsym $mod+c exec  gnome-terminal -e calcurse --role=floating
@@ -302,35 +302,12 @@ bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 
 mode "changekeymap" {
     
-        # to workspace
-        bindsym $mod+1 workspace 1
-        bindsym $mod+2 workspace 2
-        bindsym $mod+3 workspace 3
-        bindsym $mod+4 workspace 4
-        bindsym $mod+5 workspace 5
-        bindsym $mod+6 workspace 6
-        bindsym $mod+7 workspace 7
-        bindsym $mod+8 workspace 8
-        bindsym $mod+9 workspace 9
-        bindsym $mod+0 workspace 10
-        
-        # move focused container to workspace
-        bindsym $mod+Shift+1 move container to workspace 1
-        bindsym $mod+Shift+2 move container to workspace 2
-        bindsym $mod+Shift+3 move container to workspace 3
-        bindsym $mod+Shift+4 move container to workspace 4
-        bindsym $mod+Shift+5 move container to workspace 5
-        bindsym $mod+Shift+6 move container to workspace 6
-        bindsym $mod+Shift+7 move container to workspace 7
-        bindsym $mod+Shift+8 move container to workspace 8
-        bindsym $mod+Shift+9 move container to workspace 9
-        bindsym $mod+Shift+0 move container to workspace 0
-
         #    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
     bindsym a mode "default"; exec xmodmap .xmodmaprc
+    bindsym i mode "default"; exec xmodmap .xmodmaprc
 }
 
-bindsym $mod+i exec xmodmap ~/myScript/conf/xmodmap/esc_j; mode "changekeymap"
+bindsym $mod+m exec xmodmap ~/myScript/conf/xmodmap/move; mode "changekeymap"
 
 
 
@@ -340,19 +317,28 @@ bindsym $mod+i exec xmodmap ~/myScript/conf/xmodmap/esc_j; mode "changekeymap"
 # https://en.wikipedia.org/wiki/
 # google-chrome --app=https://web.wechat.com/
 #
-
 mode "open" {
-        bindsym q exec qq
-        bindsym w exec google-chrome --app=https://en.wikipedia.org/wiki/
-        bindsym shift+w exec google-chrome --app=https://en.wikipedia.org/wiki/
-        bindsym e exec google-chrome
-        bindsym r exec gnome-terminal -e ranger --role=floating
-        bindsym t exec gnome-terminal
-        bindsym i exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
-        bindsym a exec audacity 
-        bindsym shift+a exec anki
-        bindsym s exec myScript/allgit.sh
+        bindsym q exec qq ; mode "default"
+        bindsym w exec google-chrome --app=https://en.wikipedia.org/wiki/ ; mode "default"
+        bindsym shift+w exec google-chrome --app=https://en.wikipedia.org/wiki/ ; mode "default"
+        bindsym e exec google-chrome ; mode "default"
+        bindsym r exec gnome-terminal -e ranger --role=floating ; mode "default"
+        bindsym t exec gnome-terminal ; mode "default"
+        bindsym i exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating ; mode "default"
+        bindsym a exec audacity  ; mode "default"
+        bindsym shift+a exec anki ; mode "default"
+        bindsym ctrl+a exec /home/zhang/myScript/moXie/answer.sh --role=floating ; mode "default"
+        bindsym s exec myScript/allgit.sh ; mode "default"
+        bindsym f exec nautilus ; mode "default"
+        bindsym d exec wps ; mode "default"
+        bindsym l exec libreoffice  ; mode "default"
+        bindsym c exec gnome-terminal -e calcurse --role=floating ; mode "default"
+        bindsym v exec vim  ; mode "default"
+        bindsym n exec gnome-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh --role=floating ; mode "default"
+        bindsym m exec gnome-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating ; mode "default"
 }
+
+bindsym $mod+o mode "open"
 
 
 
