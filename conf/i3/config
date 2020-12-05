@@ -341,7 +341,7 @@ bindsym $mod+i exec xmodmap ~/myScript/conf/xmodmap/esc_j; mode "changekeymap"
 # google-chrome --app=https://web.wechat.com/
 #
 
-mod "open" {
+mode "open" {
         bindsym q exec qq
         bindsym w exec google-chrome --app=https://en.wikipedia.org/wiki/
         bindsym shift+w exec google-chrome --app=https://en.wikipedia.org/wiki/
@@ -351,9 +351,7 @@ mod "open" {
         bindsym i exec gnome-terminal -e /home/zhang/myScript/essay.sh --role=floating
         bindsym a exec audacity 
         bindsym shift+a exec anki
-        bindsym s 
-        
-        
+        bindsym s exec myScript/allgit.sh
 }
 
 
