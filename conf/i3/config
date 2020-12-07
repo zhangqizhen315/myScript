@@ -254,7 +254,7 @@ exec --no-startup-id ulauncher
 #exec --no-startup-id rclone mount google:myfile ~/googleDrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 
 exec --no-startup-id nm-applet
 #exec --no-startup-id rclone mount jianGuo:myfile ~/jianGuo --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 &
-exec --no-startup-id ~/myScript/allgit.sh
+#exec --no-startup-id xfce4-terminal -e ~/myScript/allgit.sh
 #exec --no-startup-id oneko
 exec --no-startup-id guake
 
