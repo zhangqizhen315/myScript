@@ -303,8 +303,7 @@ bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 mode "move" {
     
         #    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
-    bindsym a mode "default"; exec xmodmap .xmodmaprc
-    bindsym i mode "default"; exec xmodmap .xmodmaprc
+    bindsym z mode "default"; exec xmodmap .xmodmaprc
     bindsym n mode "number"; exec xmodmap ~/myScript/conf/xmodmap/number
 }
 
