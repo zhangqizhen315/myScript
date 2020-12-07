@@ -20,7 +20,6 @@ open_with%space
 open_with libreoffice
 find zf
 search goo
-delete
 fin
 search 
 filter 积分
@@ -48,3 +47,4 @@ rename 政治制度与政治箴言.pdf
 rename 劳作与时日笺释.pdf
 filter mp3
 filter  
+delete

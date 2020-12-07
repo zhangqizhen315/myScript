@@ -139,6 +139,7 @@ alias kjv='~/kjv/kjv'
 alias ra=ranger
 alias pdf=evince
 
+neofetch
 
 
 export http_proxy=http://127.0.0.1:12333
