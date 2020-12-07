@@ -336,6 +336,8 @@ mode "open" {
         bindsym v exec vim  ; mode "default"
         bindsym n exec gnome-terminal -e /home/zhang/myScript/moXie/creatQuestion.sh --role=floating ; mode "default"
         bindsym m exec gnome-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating ; mode "default"
+
+        bindsym Escape mode "default"
 }
 
 bindsym $mod+o mode "open"

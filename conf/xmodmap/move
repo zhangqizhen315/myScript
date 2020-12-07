@@ -1,7 +1,7 @@
 keycode  45 = Up NoSymbol Up
 keycode  44 = Down NoSymbol Down
-keycode  46 = Left NoSymbol Left
-keycode  43 = Right NoSymbol Right
+keycode  43 = Left NoSymbol Left
+keycode  46 = Right NoSymbol Right
 
 keycode  42 = Home NoSymbol Home
 keycode  40 = Prior NoSymbol Prior
