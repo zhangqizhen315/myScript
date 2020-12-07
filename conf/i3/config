@@ -132,16 +132,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+1 workspace 1; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/00.jpg
+bindsym $mod+2 workspace 2; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/01.jpg
+bindsym $mod+3 workspace 3; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/02.jpg
+bindsym $mod+4 workspace 4; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/03.jpg
+bindsym $mod+5 workspace 5; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/04.jpg
+bindsym $mod+6 workspace 6; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/05.jpg
+bindsym $mod+7 workspace 7; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/06.jpg
+bindsym $mod+8 workspace 8; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/07.jpg
+bindsym $mod+9 workspace 9; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/08.jpg
+bindsym $mod+0 workspace 10; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/09.jpg
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -248,7 +248,7 @@ exec --no-startup-id compton --conf .config/compton/compton.conf
 # exec --no-startup-id ~/myScript/clash.sh
 exec --no-startup-id electron-ssr 
 
-exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/莱伯维茨/*.jpg
+exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/00.jpg
 #exec --no-startup-id gnome-pie --open 123 --role=floating
 exec --no-startup-id ulauncher
 #exec --no-startup-id rclone mount google:myfile ~/googleDrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 
