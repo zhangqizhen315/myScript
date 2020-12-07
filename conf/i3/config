@@ -326,7 +326,7 @@ bindsym $mod+n exec xmodmap ~/myScript/conf/xmodmap/number; mode "number"
 #
 mode "open" {
         bindsym q exec qq ; mode "default"
-        bindsym w exec google-chrome --app=https://en.wikipedia.org/wiki/ ; mode "default"
+        bindsym w exec google-chrome --app=https://web.wechat.com/; mode "default"
         bindsym shift+w exec google-chrome --app=https://en.wikipedia.org/wiki/ ; mode "default"
         bindsym e exec google-chrome ; mode "default"
         bindsym r exec gnome-terminal -e ranger --role=floating ; mode "default"
