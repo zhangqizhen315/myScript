@@ -351,8 +351,8 @@ mode "open" {
 
 bindsym $mod+o mode "open"
 
-bindsym $mod+s exce xfce4-terminal -e ~/myScript/allgit.sh
-bindsym $mod+d exce gnome-terminal -e ~/myScript/moXie/fanyi.sh
+bindsym $mod+s exec  xfce4-terminal -e /home/zhang/myScript/allgit.sh --role=floating
+bindsym $mod+d exec gnome-terminal -e ~/myScript/moXie/fanyi.sh
 
 
 
