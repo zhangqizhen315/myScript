@@ -11,13 +11,13 @@ keycode  46 = 9 parenleft 9 parenleft
 keycode  47 = 0 parenright 0 parenright       
 
 
-keycode  24 = exclam
-keycode  25 = at 
-keycode  26 = numbersign 
-keycode  27 = dollar 
-keycode  28 = percent 
-keycode  29 = asciicircum 
-keycode  30 = ampersand 
-keycode  31 = asterisk 
+keycode  24 = plus
+keycode  25 = minus
+keycode  26 = asterisk
+keycode  27 = slash
+keycode  28 = percent
+keycode  29 = asciicircum
+keycode  30 = ampersand
+keycode  31 = equal
 keycode  32 = parenleft 
 keycode  33 = parenright 

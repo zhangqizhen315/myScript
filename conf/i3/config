@@ -113,7 +113,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -300,14 +300,21 @@ bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 
 #bindsym ctrl+i exec google-chrome
 
-mode "changekeymap" {
+mode "move" {
     
         #    bindsym Return mode "default"; exec xmodmap ~/.config/xmodmap/.xmodmaprc
     bindsym a mode "default"; exec xmodmap .xmodmaprc
     bindsym i mode "default"; exec xmodmap .xmodmaprc
 }
 
-bindsym $mod+m exec xmodmap ~/myScript/conf/xmodmap/move; mode "changekeymap"
+bindsym $mod+m exec xmodmap ~/myScript/conf/xmodmap/move; mode "move"
+
+mode "number" {
+        bindsym z mode "default"; exec xmodmap .xmodmaprc
+
+}
+
+bindsym $mod+n exec xmodmap ~/myScript/conf/xmodmap/number; mode "number"
 
 
 
@@ -341,6 +348,9 @@ mode "open" {
 }
 
 bindsym $mod+o mode "open"
+
+bindsym $mod+s xfce4-terminal -e ~/myScript/allgit.sh
+bindsym $mod+d gnome-terminal -e ~/myScript/moXie/fanyi.sh
 
 
 
