@@ -132,16 +132,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+2 workspace 2; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+3 workspace 3; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+4 workspace 4; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+5 workspace 5; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+6 workspace 6; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+7 workspace 7; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+8 workspace 8; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+9 workspace 9; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
-bindsym $mod+0 workspace 10; exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*.jpg
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -168,6 +168,10 @@ bindsym $mod+mod1+j exec amixer set Master playback 5-
 
 bindsym ctrl+shift+z exec /home/zhang/myScript/disableTouchpad.sh
 bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
+
+bindsym $mod+p exec peek
+bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
+
 
 # bindsym $mod+n exec netease-cloud-music
 # bindsym $mod+ctrl+a exec gnome-screensaver-command -l
