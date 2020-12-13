@@ -171,8 +171,7 @@ bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
 
 bindsym $mod+p exec peek
 #bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
-bindsym $mod+ctrl+c exec bash /home/zhang/myScript/change_wallpaper.sh
-
+bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
 
 # bindsym $mod+n exec netease-cloud-music
 # bindsym $mod+ctrl+a exec gnome-screensaver-command -l
@@ -248,7 +247,7 @@ exec --no-startup-id ibus-daemon --xim -d -r
 exec --no-startup-id ~/myScript/disableTouchpad.sh
 exec --no-startup-id /usr/libexec/gsd-xsettings 
 exec --no-startup-id ibus-daemon
-exec --no-startup-id xfce4-terminal -e bash ~/myScript/change_wallpaper.sh
+exec --no-startup-id bash ~/myScript/change_wallpaper.sh
 exec --no-startup-id compton --conf .config/compton/compton.conf  
 # exec --no-startup-id ~/myScript/clash.sh
 exec --no-startup-id electron-ssr 
