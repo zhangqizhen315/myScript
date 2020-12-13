@@ -6,5 +6,5 @@ while [ true ]
 do
     pic=~/图片/wallpaper/${line}
     feh --randomize --bg-fill ~/图片/wallpaper
-    sleep 300
+    sleep 3000
 done
