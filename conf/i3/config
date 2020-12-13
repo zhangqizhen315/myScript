@@ -170,7 +170,8 @@ bindsym ctrl+shift+z exec /home/zhang/myScript/disableTouchpad.sh
 bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
 
 bindsym $mod+p exec peek
-bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
+#bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
+bindsym $mod+ctrl+c exec /home/zhang/myScript/change_wallpaper.sh
 
 
 # bindsym $mod+n exec netease-cloud-music
