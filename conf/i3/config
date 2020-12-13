@@ -171,7 +171,7 @@ bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
 
 bindsym $mod+p exec peek
 #bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
-bindsym $mod+ctrl+c exec /home/zhang/myScript/change_wallpaper.sh
+bindsym $mod+ctrl+c exec bash /home/zhang/myScript/change_wallpaper.sh
 
 
 # bindsym $mod+n exec netease-cloud-music
@@ -248,12 +248,12 @@ exec --no-startup-id ibus-daemon --xim -d -r
 exec --no-startup-id ~/myScript/disableTouchpad.sh
 exec --no-startup-id /usr/libexec/gsd-xsettings 
 exec --no-startup-id ibus-daemon
-# exec --no-startup-id ~/myScript/change_wallpaper.sh
+exec --no-startup-id xfce4-terminal -e bash ~/myScript/change_wallpaper.sh
 exec --no-startup-id compton --conf .config/compton/compton.conf  
 # exec --no-startup-id ~/myScript/clash.sh
 exec --no-startup-id electron-ssr 
 
-exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
+#exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
 #exec --no-startup-id gnome-pie --open 123 --role=floating
 exec --no-startup-id ulauncher
 #exec --no-startup-id rclone mount google:myfile ~/googleDrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 
