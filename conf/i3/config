@@ -163,8 +163,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # 自定义快捷键
-bindsym $mod+mod1+k exec amixer set Master playback 5+
-bindsym $mod+mod1+j exec amixer set Master playback 5-
+bindsym $mod+ctrl+k exec amixer set Master playback 5+
+bindsym $mod+ctrl+j exec amixer set Master playback 5-
 
 bindsym ctrl+shift+z exec /home/zhang/myScript/disableTouchpad.sh
 bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
@@ -371,7 +371,7 @@ mode "open" {
         bindsym d exec wps ; mode "default"
         bindsym h exec xfce4-terminal -e hollywood --role=floating ; mode "default"
         bindsym shift+c exec xfce4-terminal -e cmatrix --role=floating ; mode "default"
-        bindsym shift+b exec xfce4-terminal -e node /home/zhang/blessed-contrib/examples/dashboard-random-colors.js --role=floating ; mode "default"
+        bindsym shift+b exec xfce4-terminal -e 'node /home/zhang/blessed-contrib/examples/dashboard-random-colors.js' --role=floating ; mode "default"
         bindsym c exec xfce4-terminal -e cmatrix --role=floating ; mode "default"
         bindsym k exec /home/zhang/kjv/kjv; mode "default"
         bindsym l exec libreoffice  ; mode "default"
