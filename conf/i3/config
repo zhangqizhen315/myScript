@@ -368,11 +368,15 @@ mode "open" {
         bindsym s exec myScript/allgit.sh ; mode "default"
         bindsym f exec nautilus ; mode "default"
         bindsym d exec wps ; mode "default"
+<<<<<<< HEAD
         bindsym h exec xfce4-terminal -e hollywood --role=floating ; mode "default"
         bindsym shift+c exec xfce4-terminal -e cmatrix --role=floating ; mode "default"
         bindsym shift+b exec xfce4-terminal -e 'node /home/zhang/blessed-contrib/examples/dashboard-random-colors.js' --role=floating ; mode "default"
         bindsym c exec xfce4-terminal -e cmatrix --role=floating ; mode "default"
         bindsym k exec /home/zhang/kjv/kjv; mode "default"
+=======
+        bindsym k exec xfce4-terminal -e /home/zhang/kjv/kjv --role=floating; mode "default"
+>>>>>>> dev
         bindsym l exec libreoffice  ; mode "default"
         bindsym c exec xfce4-terminal -e calcurse --role=floating ; mode "default"
         bindsym v exec xfce4-terminal -e vim  ; mode "default"
