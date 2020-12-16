@@ -251,6 +251,7 @@ exec --no-startup-id bash ~/myScript/change_wallpaper.sh
 exec --no-startup-id compton --conf .config/compton/compton.conf  
 # exec --no-startup-id ~/myScript/clash.sh
 exec --no-startup-id electron-ssr 
+#exec --no-startup-id xfce4-panel --disable-wm-check
 
 #exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
 #exec --no-startup-id gnome-pie --open 123 --role=floating
