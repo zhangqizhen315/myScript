@@ -218,6 +218,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        mode hide
+        hidden_state hide
+        modifier $mod
             colors {
         background #000000
         statusline #ffffff
@@ -293,7 +296,7 @@ bindsym $mod+mod1+l exec dm-tool lock
 
 
 ## 打开 gaps
-gaps inner 20
+gaps inner 10
 
 
 # 运行 xmodmap
