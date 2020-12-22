@@ -15,6 +15,7 @@ ascii_composer:
 config_version: 0.38
 key_binder:
   bindings:
+    - {accept: "Escape", toggle: ascii_mode, when: always}
     - {accept: "Control+p", send: Up, when: composing}
     - {accept: "Control+n", send: Down, when: composing}
     - {accept: "Control+b", send: Left, when: composing}
