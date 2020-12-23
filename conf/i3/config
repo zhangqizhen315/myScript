@@ -192,7 +192,9 @@ bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wall
 # bindsym $mod+g exec google-chrome
 # bindsym $mod+c exec wps
 #bindsym $mod+ctrl+a exec shutter -s
-bindsym shift+ctrl+a exec deepin-screenshot
+#bindsym shift+ctrl+a exec deepin-screenshot
+bindsym shift+ctrl+a exec /usr/bin/flameshot gui
+for_window [class="flameshot"] floating enable
 # bindsym $mod+Shift+a exec pinta
 
 # bindsym $mod+q exec /opt/deepinwine/apps/Deepin-TIM/run.sh
