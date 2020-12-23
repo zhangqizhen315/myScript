@@ -62,6 +62,7 @@ key_binder:
     - {when: has_menu, accept: space, send: space}
     - {when: composing, accept: space, send: Escape}
     - {accept: Release+Escape, toggle: ascii_mode, when: always}
+    - {accept: "Control", toggle: ascii_mode, when: always}
   import_preset: default
 menu:
   page_size: 5
