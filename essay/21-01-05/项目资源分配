@@ -1,0 +1,135 @@
+项目资源分配
+
+项目资源是满足用户项目需求的资源, 项目需求是指设计人员通过设计服务平台提供的 IT 服务开展项目活动的需求. 
+
+项目资源分配流程
+
+创建 [ 项目用户 ]
+平台所有资源都分配给具体用户. 有的项目资源需要分配给项目本身, 需要在平台上创建一个项目用户, 作为项目本身的代表. 采用这种方式而非以项目负责人作为项目的代表, 是考虑到项目更换负责人或项目结束等需要解除项目资源和项目负责人关系的情况. 
+为了便于区分和项目用户和普通用户, 创建项目用户时, 请选择用户的部门为 "项目".
+
+创建 [ 项目资源组 ]
+[ 项目资源组 ] 是用来给项目本身分配资源的 [ 服务分组 ]. 将 [ 项目用户 ] 加入 [ 项目资源组 ] 即可为项目本身分配资源. [ 项目用户 ] 加入 [ 项目资源组 ] 前, 需要保证已为项目经理创建 AD 账号.
+为了便于项目成员分享项目资源, 创建 [ 项目资源组 ] 时, 需要将 [ 是否共享 ] 选项选择为 "是". 需要对 [ 项目资源组 ] 的 [ 自定属性 ] 进行以下设置:
+project_manager: 项目经理的用户名.
+project_name: 项目的名称.
+[ 项目资源组 ] 内需要添加以下配置:
+
+[ 总站AD项目组 ]
+[ 总站AD项目组 ] 用来创一个 AD 用户组, 该 AD 用户组用于为用项目成员分配项目资源. 具体配置如下:
+Ldap dn | CN={{group_attribution.project_name}},OU=ActionUltra,DC=ckscenter,DC=com
+管理者的dn | CN={{group_attribution.project_manager}},OU=ActionUltra,DC=ckscenter,DC=com
+
+[ 无锡总部NetApp ONTAP 项目存储配置 ]
+[ 无锡总部NetApp ONTAP 项目存储配置 ] 用来为项目分配存储空间. 具体配置如下:
+cifs 组访问权限 | full_control
+cifs 分享名称 | {{group_attribution.project_name}}
+cifs 用户访问权限 | full_control
+qtree 导出策略 | user1
+nfs ip | 10.119.235.100
+组织机构 | Wuxi
+qtree 组权限 | ckscenter\{{group_attribution.project_name}}
+qtree 名称 | {{group_attribution.project_name}}_prj
+qtree 用户权限 | ckscenter\{{group_attribution.project_manager}}
+SVM 名称 | SVM0-NAS-NFS0
+存储用途 | projects
+用户空间挂载路径 | projects/{{group_attribution.project_name}}
+卷名称 | vol_wuxi_projects
+
+创建 [ 项目成员组 ]
+[ 项目成员组 ] 是用来为项目成员分配项目资源的 [ 服务分组 ]. 将项目成员的加入到 [ 项目成员组 ] 即可以相应项目的资源分享给加入组的项目成员. 项目成员加入 [ 项目成员组 ] 前, 需要保证以下条件:
+[ 项目资源组 ] 已创建成功, 并且其 [ 共享类型 ] 为 "共享";
+项目成员均已创建了 AD 账号, 并且分配了用户存储 ( 也即加入过基础资源组 );
+需要对 [ 项目成员组 ] 的 [ 自定属性 ] 进行以下设置:
+project_manager: 项目经理的用户名.
+project_name: 项目的名称.
+[ 项目成员组] 内需要添加以下配置:
+
+[ 总站项目 ] 
+[ 总站项目 ]  配置用于将项目成员的 AD 账户加入到项目的 AD 用户组. 分配该配置需要保证项目成员已有 AD 账户. 具体配置如下:
+Ldap group dn | CN={{group_attribution.project_name}},OU=ActionUltra,DC=ckscenter,DC=com
+Ldap user dn | CN={{user.username}},OU=ActionUltra,DC=ckscenter,DC=com
+
+[ 总站netapp项目存储共享 ]
+[ 总站netapp项目存储共享 ] 配置用于为项目成员共享项目存储. 分配该配置需要保证项目成员已分配了用户存储. 具体配置如下:
+共享 dataset 名称 | {{ontap.qtree_name}}
+Dfs 文件夹名称 | {{group_attribution.project_name}}
+目标路径 | \\10.119.235.99\{{ontap.cifs_name}}
+组织机构 | Wuxi
+存储用途 | projects
+用户名 | {{user.username}}
+
+[ AD存储配置182 ]
+[ AD存储配置182 ] 配置用于修改项目成员的 AD 账户属性, 以便于为用户共享项目存储. 具体配置如下:
+Ldap dn | CN={{user.username}},OU=ActionUltra,DC=ckscenter,DC=com
+本地路径 | \\10.119.222.182\sau\{{user.username}}
+
+其它可选的项目资源配置
+除了以上开展项目必需的资源外, 还可以在项目中添加一些项目活动中可能用到的资源. 可以将这些可选的项目资源配置加入到 [ 项目成员组 ] 中, 项目成员即可分配到相应的资源.
+
+EDA 应用
+如果项目中用到 EDA 应用, 可以将相应的配置加入到 [ 项目成员组 ] 中. EDA 相应配置包括:
+
+[ 应用分配 ]
+[ 应用分配 ] 配置用于为用户分配 [ 应用中心 ] 中的 EDA 应用. 具体配置如下:
+应用名称 | 应用的配置名称, 该名称应与 [ 应用中心 ] EDA 名称完全对应.
+配置名称 | 该配置的唯一标识, 如果用户多次分配了同一应用, 系统可以通过该配置项中的唯一标识对多个同名应用进行区分.
+用户名称 | {{user.username}}
+
+[ 虚拟应用 ]
+[ 虚拟应用 ] 配置用于为用户分配 [ 虚拟应用 ] 面板, 通过 [ 虚拟应用 ] 面板, 用户可以看到自己分配的, 且支持虚拟应用的 EDA 应用图标. 点击相应 EDA 应用图标, 可以以虚拟应用的形式打开该 EDA 应用. 具体配置如下:
+用户名 | {{user.username}}
+
+高性能服务器
+高性能服务器是用于进行资源消耗比较高的设计活动的服务器, 比如用于进行访真的服务器. 
+
+[ 高性能服务器 ]
+[ 高性能服务器 ] 配置用于为用户分配 [ 高性能服务器 ] 面板, 用户通过 [ 高性能服务器 ] 面板可以通过 RDP 或 SHH 两种方式登录相应高性能服务器. 具体配置如下:
+CPU 使用率查询 | 100 - (avg(irate(node_cpu_seconds_total{instance=~"10.119.222.22:9100",mode="idle"}[5m])) * 100)
+实体机显示名称 | 仿真验证服务器
+Grafana 地址 | http://monitorvm.ckscenter.com:3000/
+实体机 IP | 10.119.222.22
+RAM 使用率查询 | (1 - (node_memory_MemFree_bytes{instance=~"10.119.222.22:9100"} / (node_memory_MemTotal_bytes{instance=~"10.119.222.22:9100"})))* 100
+
+LSF 任务调度系统
+LSF 任务调度系统可以对用户提交的任务进行调度, 可以有效避免设计人员争抢有限 IT 资源的问题. LSF 任务调度系统包括如下配置:
+
+[ 加入lsf组 ]
+[ 加入lsf组 ] 配置用于为用户分配使用 LSF 的权限. 分配了该配置的用户才能使用 LSF 系统. 具体配置如下:
+Ldap group dn | CN=lsfcluster,OU=ActionUltra,DC=ckscenter,DC=com
+Ldap user dn | CN={{user.username}},OU=ActionUltra,DC=ckscenter,DC=com
+
+[ LSF作业调度系统 ]
+[ LSF作业调度系统 ] 配置用于为用户分配 [ LSF 作业调度系统 ] 面板, 通过该面板用户可以登录 LSF 系统界面, 提交任务, 查看任务执行情况. 具体配置如下:
+外部链接 | http://files.ckscenter.com/files/lian/LSF/index.html
+
+[ LSF_log ]
+[ LSF_log ] 配置用于为用懚分配 [ LSF 登录 ] 面板, 通过该面板用户可以使用 SSH 登录 LSF 命令行提交任务. 具体配置如下:
+实体机显示名称 | LSF任务调度
+实体机IP | 10.119.221.123
+
+协作类资源
+在项目工作中, 设计人员可能会有相互协作的需求, 如通过项目 wiki 同步项目信息, 通过即时通讯工具进行沟通. 将相应协作类的资源配置加入到 [ 项目成员组 ] 中, 即可为相应用户分配相应协作类资源. 具体资源配置详见协作类资源章节.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
