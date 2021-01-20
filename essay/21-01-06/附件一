@@ -1,0 +1,15 @@
+附件一
+
+引用平台变量
+
+在进行 [ 服务配置 ] 的配置时, 有时需要引用一些平台提供的变量, 比如在为用户创建 AD 账户时, 需要引用用户在平台账户的用户名和密码.
+通过以下方法可以引用用户属性
+用户名   | user.username 
+用户密码 | user.password 
+用户昵称 | user.nick_name
+用户邮箱 | user.email    
+自定义属性引用方法
+用户自定义属性     | user_attribution.[属性名]          
+组自定义属性       | group_attribution.[属性名]         
+动作配置自定义属性 | configuration_attribution.[属性名] 
+

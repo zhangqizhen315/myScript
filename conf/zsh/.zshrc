@@ -187,3 +187,5 @@ export fzf_preview_cmd='[[ $(file --mime {}) =~ binary  ]] && echo {} is a binar
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+xmodmap .xmodmaprc
