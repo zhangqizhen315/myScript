@@ -142,7 +142,7 @@ alias pdf=evince
 neofetch
 
 
-export http_proxy=http://127.0.0.1:12333
+export http_proxy=http://127.0.0.1:20171
 #rclone mount google:myfile ~/googleDrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 &
 
 
