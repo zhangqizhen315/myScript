@@ -188,3 +188,7 @@ export fzf_preview_cmd='[[ $(file --mime {}) =~ binary  ]] && echo {} is a binar
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+
+### 路径简称
+
+alias purpay=~/文档/复盘/输出/purchase_payment
