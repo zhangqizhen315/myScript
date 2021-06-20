@@ -138,6 +138,8 @@ alias kjv='~/kjv/kjv'
 alias dk='xdg-open'
 
 alias purpay=~/文档/复盘/输出/purchase_payment
+alias zengarden=~/文档/exercise/zengarden
+alias mypage=~/文档/mypage
 
 
 alias ra=ranger
