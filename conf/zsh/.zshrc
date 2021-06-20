@@ -135,6 +135,10 @@ alias cq='bash ~/myScript/moXie/creatQuestion.sh'
 alias ob='bash ~/myScript/readnote/openbook.sh'
 alias kjv='~/kjv/kjv'
 
+alias dk='xdg-open'
+
+alias purpay=~/文档/复盘/输出/purchase_payment
+
 
 alias ra=ranger
 alias pdf=evince
@@ -191,7 +195,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 ### 路径简称
 
-alias purpay=~/文档/复盘/输出/purchase_payment
 
 
 ### 命令简称
