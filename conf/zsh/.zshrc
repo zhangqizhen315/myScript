@@ -140,6 +140,7 @@ alias dk='xdg-open'
 alias purpay=~/文档/复盘/输出/purchase_payment
 alias zengarden=~/文档/exercise/zengarden
 alias mypage=~/文档/mypage
+alias h5=~/文档/exercise/HTML5权威指南
 
 
 alias ra=ranger
