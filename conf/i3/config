@@ -184,7 +184,7 @@ bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
 
 bindsym $mod+p exec peek
 #bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
-bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
+bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/莱伯维茨/*
 
 # bindsym $mod+n exec netease-cloud-music
 # bindsym $mod+ctrl+a exec gnome-screensaver-command -l
@@ -193,7 +193,7 @@ bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wall
 # bindsym $mod+c exec wps
 #bindsym $mod+ctrl+a exec shutter -s
 #bindsym shift+ctrl+a exec deepin-screenshot
-bindsym shift+ctrl+a exec /usr/bin/flameshot gui
+bindsym shift+alt+a exec /usr/bin/flameshot gui
 for_window [class="flameshot"] floating enable
 # bindsym $mod+Shift+a exec pinta
 
@@ -233,7 +233,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status -t
-        mode hide
+#        mode hide
         hidden_state hide
         modifier $mod
 #            colors {
