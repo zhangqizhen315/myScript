@@ -70,7 +70,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+Return exec xfce4-terminal --role=floating
+bindsym $mod+Return exec xfce4-terminal -e fish --role=floating
 #bindsym $mod+p exec xfce4-terminal -e ranger --role=floating
 #bindsym $mod+shift+m exec xfce4-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
 #bindsym $mod+m exec xfce4-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
@@ -83,7 +83,7 @@ bindsym $mod+c exec  xfce4-terminal -e calcurse --role=floating
 
 for_window [window_role="^floating$"] floating enable
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+ctrl+q kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec gnome-do
@@ -184,7 +184,7 @@ bindsym ctrl+shift+x exec /home/zhang/myScript/enableTouchpad.sh
 
 bindsym $mod+p exec peek
 #bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
-bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/莱伯维茨/*
+#bindsym $mod+ctrl+c exec --no-startup-id feh --bg-fill --randomize ~/图片/莱伯维茨/*
 
 # bindsym $mod+n exec netease-cloud-music
 # bindsym $mod+ctrl+a exec gnome-screensaver-command -l
@@ -265,31 +265,32 @@ exec --no-startup-id export XMODIFIERS=@im=ibus
 exec --no-startup-id export QT_IM_MODULE=ibus
 
 
-exec --no-startup-id export http_proxy=http://127.0.0.1:12333
+#exec --no-startup-id export http_proxy=http://127.0.0.1:12333
 
 ###########################
 #exec --no-startup-id feh --bg-scale /home/abc/.config/i3/bgp.jpg
 exec --no-startup-id ibus-daemon --xim -d -r
 ###################################
 
-exec --no-startup-id ~/myScript/disableTouchpad.sh
+exec --no-startup-id ~/myScript/disableTouchpad.sh   # 禁用触摸板
 exec --no-startup-id /usr/libexec/gsd-xsettings 
 exec --no-startup-id ibus-daemon
-exec --no-startup-id bash ~/myScript/change_wallpaper.sh
-exec --no-startup-id compton --conf .config/compton/compton.conf  
-# exec --no-startup-id ~/myScript/clash.sh
-exec --no-startup-id electron-ssr 
+exec --no-startup-id compton --conf .config/compton/compton.conf  # 窗口效果器
+exec --no-startup-id ulauncher   # 应用搜索
+exec --no-startup-id nm-applet   # 网络管理器
+exec --on-startup-id goldendict  # 词典应用
+bindsym $mod+mod1+l exec dm-tool lock # 锁屏
+#exec --no-startup-id guake # 下拉式终端
+#exec --no-startup-id bash ~/myScript/change_wallpaper.sh
+#exec --no-startup-id ~/myScript/clash.sh
+#exec --no-startup-id electron-ssr 
 #exec --no-startup-id xfce4-panel --disable-wm-check
-
-#exec --no-startup-id feh --bg-fill --randomize ~/图片/wallpaper/ok/*
+exec --no-startup-id feh --bg-fill --randomize ~/图片/莱伯维茨/*
 #exec --no-startup-id gnome-pie --open 123 --role=floating
-exec --no-startup-id ulauncher
 #exec --no-startup-id rclone mount google:myfile ~/googleDrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 
-exec --no-startup-id nm-applet
 #exec --no-startup-id rclone mount jianGuo:myfile ~/jianGuo --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 &
 #exec --no-startup-id xfce4-terminal -e ~/myScript/allgit.sh
 #exec --no-startup-id oneko
-exec --no-startup-id guake
 
 
 #exec --no-startup-id i3-msg 'workspace 1; exec xfce4-terminal -e ranger;layout splitv;split vertical;exec xfce4-terminal -e "termsaver clock";exec  xfce4-terminal;workspace 2;exec google-chrome --app=https://pomotodo.com/app/;exec netease-cloud-music;'
@@ -311,7 +312,6 @@ exec --no-startup-id guake
 #}
 #bindsym $mod+del mode "$mode_system"
 #bindsym $mod+ctrl+l exec gnome-screensaver-command -l
-bindsym $mod+mod1+l exec dm-tool lock
 
 
 # layout toggle split; layout splitv; split vertical;
@@ -327,8 +327,8 @@ gaps inner 10
 # 运行 xmodmap
 #
 
-exec --no-startup-id xmodmap ~/.xmodmaprc
-bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
+#exec --no-startup-id xmodmap ~/.xmodmaprc
+#bindsym $mod+Escape exec xmodmap ~/.xmodmaprc
 #bindsym $mod+Escape exec xmodmap ~/.config/xmodmap/.xmodmaprc; exec google-chrome
 
 #bindsym ctrl+i exec google-chrome
@@ -340,7 +340,7 @@ mode "move" {
     bindsym n mode "number"; exec xmodmap ~/myScript/conf/xmodmap/number
 }
 
-bindsym $mod+m exec xmodmap ~/myScript/conf/xmodmap/move; mode "move"
+#bindsym $mod+m exec xmodmap ~/myScript/conf/xmodmap/move; mode "move"
 
 mode "number" {
         bindsym z mode "default"; exec xmodmap .xmodmaprc
@@ -372,7 +372,7 @@ mode "number" {
         
 }
 
-bindsym $mod+n exec xmodmap ~/myScript/conf/xmodmap/number; mode "number"
+#bindsym $mod+n exec xmodmap ~/myScript/conf/xmodmap/number; mode "number"
 
 
 
@@ -394,7 +394,7 @@ mode "open" {
         bindsym a exec audacity  ; mode "default"
         bindsym shift+a exec anki ; mode "default"
         bindsym ctrl+a exec /home/zhang/myScript/moXie/answer.sh --role=floating ; mode "default"
-        bindsym s exec myScript/allgit.sh ; mode "default"
+        bindsym s exec scricpy; mode "default"
         bindsym f exec nautilus ; mode "default"
         bindsym d exec wps ; mode "default"
         bindsym h exec xfce4-terminal -e hollywood --role=floating ; mode "default"
@@ -413,7 +413,5 @@ mode "open" {
 
 bindsym $mod+o mode "open"
 
-bindsym $mod+s exec  xfce4-terminal -e /home/zhang/myScript/allgit.sh --role=floating
-bindsym $mod+d exec xfce4-terminal -e ~/myScript/moXie/fanyi.sh --role=floating
 
 
