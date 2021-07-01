@@ -7,5 +7,5 @@
 ulauncher &
 nm-applet &
 goldendict &
-compton --conf .config/compton/compton.conf 
+compton --conf /home/zhang/.config/compton/compton.conf 
 

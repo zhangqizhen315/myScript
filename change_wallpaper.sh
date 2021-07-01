@@ -4,6 +4,6 @@
 
 while [ true ]
 do
-    feh --randomize --bg-fill ~/图片/wallpaper/ok/*
+    feh --randomize --bg-fill ~/图片/luck/space/*
     sleep 60s
 done
