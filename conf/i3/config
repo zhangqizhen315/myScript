@@ -70,7 +70,7 @@ floating_modifier $mod
 
 # start a terminal
 #bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+Return exec xfce4-terminal -e fish --role=floating
+bindsym $mod+Return exec xfce4-terminal -e fish 
 #bindsym $mod+p exec xfce4-terminal -e ranger --role=floating
 #bindsym $mod+shift+m exec xfce4-terminal -e /home/zhang/myScript/moXie/memory.sh --role=floating
 #bindsym $mod+m exec xfce4-terminal -e /home/zhang/myScript/moXie/fanyi.sh --role=floating
@@ -272,20 +272,21 @@ exec --no-startup-id export QT_IM_MODULE=ibus
 exec --no-startup-id ibus-daemon --xim -d -r
 ###################################
 
-exec --no-startup-id ~/myScript/disableTouchpad.sh   # 禁用触摸板
+#exec --no-startup-id ~/myScript/disableTouchpad.sh   # 禁用触摸板
 exec --no-startup-id /usr/libexec/gsd-xsettings 
 exec --no-startup-id ibus-daemon
-exec --no-startup-id compton --conf .config/compton/compton.conf  # 窗口效果器
-exec --no-startup-id ulauncher   # 应用搜索
-exec --no-startup-id nm-applet   # 网络管理器
-exec --on-startup-id goldendict  # 词典应用
+exec --no-startup-id /bin/bash ~/myScript/autostart.sh
+#exec --no-startup-id compton --conf .config/compton/compton.conf  # 窗口效果器
+#exec --no-startup-id ulauncher   # 应用搜索
+#exec --no-startup-id nm-applet   # 网络管理器
+#exec --on-startup-id goldendict  # 词典应用
 bindsym $mod+mod1+l exec dm-tool lock # 锁屏
 #exec --no-startup-id guake # 下拉式终端
 #exec --no-startup-id bash ~/myScript/change_wallpaper.sh
 #exec --no-startup-id ~/myScript/clash.sh
 #exec --no-startup-id electron-ssr 
 #exec --no-startup-id xfce4-panel --disable-wm-check
-exec --no-startup-id feh --bg-fill --randomize ~/图片/莱伯维茨/*
+#exec --no-startup-id feh --bg-fill --randomize ~/图片/莱伯维茨/*
 #exec --no-startup-id gnome-pie --open 123 --role=floating
 #exec --no-startup-id rclone mount google:myfile ~/googleDrive --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 
 #exec --no-startup-id rclone mount jianGuo:myfile ~/jianGuo --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000 &
@@ -388,7 +389,7 @@ mode "open" {
         bindsym shift+w exec google-chrome --app=https://en.wikipedia.org/wiki/ ; mode "default"
         bindsym e exec google-chrome ; mode "default"
         bindsym r exec xfce4-terminal -e ranger --role=floating ; mode "default"
-        bindsym t exec xfce4-terminal ; mode "default"
+        bindsym t exec xfce4-terminal --role=floating; mode "default"
         bindsym i exec xfce4-terminal -e /home/zhang/myScript/essay.sh --role=floating ; mode "default"
         bindsym p exec peek; mode "default"
         bindsym a exec audacity  ; mode "default"
