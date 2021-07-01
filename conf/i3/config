@@ -394,7 +394,7 @@ mode "open" {
         bindsym a exec audacity  ; mode "default"
         bindsym shift+a exec anki ; mode "default"
         bindsym ctrl+a exec /home/zhang/myScript/moXie/answer.sh --role=floating ; mode "default"
-        bindsym s exec scricpy; mode "default"
+        bindsym s exec scrcpy; mode "default"
         bindsym f exec nautilus ; mode "default"
         bindsym d exec wps ; mode "default"
         bindsym h exec xfce4-terminal -e hollywood --role=floating ; mode "default"
