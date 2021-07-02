@@ -5,5 +5,5 @@
 while [ true ]
 do
     feh --randomize --bg-fill ~/图片/wallpaper/work/*
-    sleep 60s
+    sleep 600s
 done
