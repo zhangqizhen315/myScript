@@ -89,6 +89,7 @@ bindsym $mod+ctrl+q kill
 # bindsym $mod+d exec gnome-do
 bindsym $mod+d exec xfce4-appfinder
 bindsym $mod+b exec blueman-manager
+bindsym $mod+s exec pavucontrol
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
